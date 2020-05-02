@@ -1,5 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, withPrefix } from "gatsby"
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
@@ -9,17 +9,17 @@ import "./layout.css"
 library.add(fab)
 
 const Layout = ({ location, title, children }) => {
-  const rootPath = `${__PATH_PREFIX__}/`
+  const rootPath = withPrefix(`/`)
   let header
 
   if (location.pathname === rootPath) {
     header = (
-      <img class="logo" alt="AdoptOpenJDK logo" src="/adopt_logo_white.svg" />
+      <img class="logo" alt="AdoptOpenJDK logo" src={withPrefix(`adopt_logo_white.svg`)} />
     )
   } else {
     header = (
       <Link to={`/`} style={{ boxShadow: `none`, color: `inherit` }}>
-        <img class="logo" alt="AdoptOpenJDK logo" src="/adopt_logo_white.svg" />
+        <img class="logo" alt="AdoptOpenJDK logo" src={withPrefix(`adopt_logo_white.svg`)} />
       </Link>
     )
   }

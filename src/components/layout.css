@@ -5,7 +5,7 @@ body {
 #site-header-main {
     display: flex;
     background-color: #152935;
-    background:url(/background.png);
+    background:url(../images/background.png);
     justify-content: center;
     align-items: center;
     height: 10em;
