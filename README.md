@@ -28,7 +28,7 @@ To preview your post, start the local development server by running `gatsby deve
 
 ## Editing Conventions
 
-### Excerpts
+### Excerpts
 
 On the front page, we only display excerpts and not full posts. By default, Gatsby will shorten your post automatically, which might yield unsatisfactory results. You have to options to control that behaviour:
 
