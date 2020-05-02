@@ -1,0 +1,32 @@
+{
+  "andreasahlenstorf": {
+    "name": "Andreas Ahlenstorf",
+    "summary": "Senior researcher at the Zurich University of Applied Sciences, TSC member at AdoptOpenJDK",
+    "twitter": null,
+    "github": "aahlenst"
+  },
+  "georgeadams": {
+    "name": "George Adams",
+    "summary": "Java Program Manager @microsoft, Chair of TSC @AdoptOpenJDK, Core Collaborator @nodejs",
+    "twitter": "gdams",
+    "github": "gdams_"
+  },
+  "martijnverburg": {
+    "name": "Martijn Verburg",
+    "summary": "Principal SWE Group Manager (Java) @ MSFT, ex CEO jClarity (acquired), LJC, Director @ AdoptOpenJDK, Speaker/Author, Java Champion, The Diabolical Developer",
+    "twitter": "karianna",
+    "github": "karianna"
+  },
+  "shelleylambert": {
+    "name": "Shelley Lambert",
+    "summary": "Software Verification @ AdoptOpenJDK / Eclipse OMR / Eclipse OpenJ9 - IBM Runtime Technologies",
+    "twitter": null,
+    "github": "smlambert"
+  },
+  "suechaplain": {
+    "name": "Sue Chaplain",
+    "summary": "Writer, editor, and advocate for all things Open Java",
+    "twitter": null,
+    "github": "suechaplain"
+  }
+}
