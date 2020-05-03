@@ -35,6 +35,7 @@ const BlogIndex = ({ data, location }) => {
             display: `flex`,
             flexWrap: `wrap`,
             justifyContent: `space-between`,
+            flexDirection: `row-reverse`,
             listStyle: `none`,
             padding: 0,
           }}
