@@ -9,6 +9,7 @@ import Author from "../components/author"
 import { rhythm, scale } from "../utils/typography"
 import AuthorData from "../../content/authors.json"
 import GuestPost from "../components/guestpost"
+import Byline from "../components/byline"
 
 const components = {
   GuestPost
@@ -43,7 +44,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
               marginBottom: rhythm(1),
             }}
           >
-            {post.frontmatter.date} – posted by {author.name}
+            <Byline date={post.frontmatter.date} name={author.name} />
           </p>
         </header>
         <MDXProvider components={components}>

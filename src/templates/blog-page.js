@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import AuthorData from "../../content/authors.json"
+import Byline from "../components/byline"
 
 const BlogPage = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -30,7 +31,7 @@ const BlogPage = ({ data, pageContext, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date} – posted by {author.name}</small>
+              <small><Byline author={author.name} date={node.frontmatter.date} /></small>
             </header>
             <section>
               <p
