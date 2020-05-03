@@ -30,12 +30,7 @@ To preview your post, start the local development server by running `gatsby deve
 
 ### Excerpts
 
-On the front page, we only display excerpts and not full posts. By default, Gatsby will shorten your post automatically, which might yield unsatisfactory results. You have to options to control that behaviour:
-
-* Insert `<!-- excerpt-end -->` in your text. Everything that comes before that marker will be part of your excerpt.
-* In the frontmatter of your post (metadata delimited with `---` at the beginning of your post), add a field `description` with the text you want to see on the front page.  
-
-The second option with the dedicated `description` is preferable if you have markup (will be stripped) or content at the beginning of your article that should not appear in the excerpt, e.g., a guest post marker.  
+On the front page, we only display excerpts and not full posts. By default, Gatsby will shorten your post automatically, which might yield unsatisfactory results. To control that behaviour, add a field `description` with the text you want to see on the front page in the frontmatter of your post (metadata delimited with `---` at the beginning of your post).
 
 ### Images with Captions
 

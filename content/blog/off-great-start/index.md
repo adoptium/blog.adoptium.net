@@ -2,6 +2,7 @@
 title: We're off to a great start
 date: "2017-09-06T10:56:58+00:00"
 author: georgeadams
+description: AdoptOpenJDK has certainly come a long way over the last few months!
 tags:
   - announcements
 ---

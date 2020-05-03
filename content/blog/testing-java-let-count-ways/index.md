@@ -2,6 +2,7 @@
 title: "Testing Java: Let Me Count the Ways"
 date: "2017-08-08T00:28:10+00:00"
 author: shelleylambert
+description: For years now, I have been testing Java and if there is a single statement to make about that activity, it is that there are many, many, many ways to test a Java Virtual Machine (JVM).
 tags:
   - test
 ---

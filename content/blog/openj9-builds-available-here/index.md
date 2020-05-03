@@ -2,6 +2,7 @@
 title: OpenJ9 builds available here!
 date: "2017-09-17T12:00:00+00:00"
 author: georgeadams
+description: What a crazy last week it has been for everyone at AdoptOpenJDK. We are very excited to have begun adding OpenJ9 builds to our website!
 tags:
   - openj9
 ---

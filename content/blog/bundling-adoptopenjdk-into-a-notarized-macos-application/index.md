@@ -2,9 +2,12 @@
 title: Bundling AdoptOpenJDK into a notarized macOS application
 date: "2019-07-31T12:00:00+00:00"
 author: georgeadams
+description: Some changes have been made to the way we codesign our macOS binaries.
+tags:
+  - faq
 ---
 
-Some changes have been made to the way we codesign our macOS binaries.<!-- excerpt-end -->
+Some changes have been made to the way we codesign our macOS binaries.
 
 ![Codesign verification of a hardened runtime](./terminal_codesign.png)
 *`codesign` verification of a hardened runtime*

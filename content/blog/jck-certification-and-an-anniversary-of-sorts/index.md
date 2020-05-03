@@ -2,6 +2,7 @@
 title: JCK Certification and An Anniversary of Sorts
 date: "2018-03-16T14:05:34+00:00"
 author: shelleylambert
+description: Exactly a year ago today, Tim Ellison sent me a note.  He had just watched a presentation I had recorded, talking about the work my team had started to vastly 'simplify Java testing'.
 tags:
   - test
 ---

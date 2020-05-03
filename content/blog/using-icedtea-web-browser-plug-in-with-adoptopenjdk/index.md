@@ -2,6 +2,7 @@
 title: Using IcedTea-Web (to run JNLP) with AdoptOpenJDK.
 date: "2018-10-04T04:56:34+00:00"
 author: jayashreekumar
+description: "We have produced a short slide deck and a video showing you how to get the IcedTea WebStart plugin working with AdoptOpenJDK binaries."
 tags:
   - faq
 ---

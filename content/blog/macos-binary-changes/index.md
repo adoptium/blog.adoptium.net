@@ -2,13 +2,12 @@
 title: MacOS Binary Changes
 date: "2018-10-05T18:30:25+00:00"
 author: georgeadams
+description: As a result of a recent change in our build scripts, the directory layout of our macOS tarballs has changed. Many developers had requested that we ship our binaries in the native macOS binary layout rather than our traditional JDK layout.
 tags:
   - announcements
 ---
 
 As a result of a recent change in our build scripts, the directory layout of our macOS tarballs has changed. Many developers had requested that we ship our binaries in the native macOS binary layout rather than our traditional JDK layout.
-
-<!-- excerpt-end -->
 
 ## Why the change?
 

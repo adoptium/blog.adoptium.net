@@ -2,6 +2,7 @@
 title: "Playing with Test Microservices"
 date: "2017-11-15 12:02:50+00:00"
 author: shelleylambert
+description: Recently, I had the good fortune to speak (fondly!) about some excellent open-source projects that I participate in... AdoptOpenJDK, Eclipse OpenJ9 and Eclipse OMR.  Across those three projects, we are trying to simplify the activity of testing.
 tags:
   - test
 ---

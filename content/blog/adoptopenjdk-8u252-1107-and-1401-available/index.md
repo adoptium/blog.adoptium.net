@@ -2,11 +2,12 @@
 title: AdoptOpenJDK 8u252, 11.0.7, and 14.0.1 Available
 date: "2020-04-21T12:20:00+00:00"
 author: andreasahlenstorf
+description: AdoptOpenJDK is happy to announce the immediate availability of AdoptOpenJDK 8u252, 11.0.7, and 14.0.1, both with OpenJDK HotSpot and Eclipse OpenJ9. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
+tags:
+  - announcement
 ---
 
 AdoptOpenJDK is happy to announce the immediate availability of AdoptOpenJDK 8u252, 11.0.7, and 14.0.1, both with [OpenJDK HotSpot](https://openjdk.java.net/groups/hotspot/) and [Eclipse OpenJ9](https://www.eclipse.org/openj9/). As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
-
-<!-- excerpt-end -->
 
 * [List of security fixes and other fixes in OpenJDK 8u252](https://bugs.openjdk.java.net/browse/JDK-8241560?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%20openjdk8u252%20ORDER%20BY%20created%20DESC)
 

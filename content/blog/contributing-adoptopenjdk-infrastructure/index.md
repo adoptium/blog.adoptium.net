@@ -2,6 +2,7 @@
 title: Contributing to AdoptOpenJDK/Infrastructure
 date: "2018-02-13T17:23:16+00:00"
 author: geraintjones
+description: I recently joined the AdoptOpenJDK community, and chose to focus on helping to maintain the build and test machines and the automation used to set up and maintain them.
 tags:
   - infrastructure
 ---

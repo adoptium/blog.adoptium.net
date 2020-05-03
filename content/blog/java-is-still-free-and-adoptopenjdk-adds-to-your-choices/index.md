@@ -2,6 +2,7 @@
 title: Java Is Still Free and AdoptOpenJDK adds to your choices!
 date: "2018-09-17T10:49:44+00:00"
 author: martijnverburg
+description: With the recent changes to Oracle JDK distribution and support there has been considerable uncertainty in the Java ecosystem. In particular there is confusion over the rights to use Oracle JDK vs Oracle's OpenJDK builds vs OpenJDK builds from other providers such as AdoptOpenJDK!
 tags:
   - faq
   - overview

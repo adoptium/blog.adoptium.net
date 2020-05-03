@@ -2,6 +2,7 @@
 title: GitHub Pages with Cloudflare
 date: "2017-08-08T09:36:18+00:00"
 author: enriquelacal
+description: GitHub Pages offers the ability to host static websites from a GitHub Repository and it can be linked to CloudFlare using a custom domain name. Though it does not support SSL on custom domains, we can use CloudFlare Universal SSL to allow our users to access the website over SSL.
 tags:
   - website
 ---

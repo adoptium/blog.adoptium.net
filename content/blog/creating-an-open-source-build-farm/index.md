@@ -2,6 +2,7 @@
 title: Creating an Open Source Build Farm
 date: 2017-08-05T11:01:09+00:00
 author: georgeadams
+description: When it comes to any community driven open source project, funding is always the limiting factor. There is no cheap way to get machines hosted for you in the cloud so it's essential that you approach as many companies as you can and try and build up sponsorship deals.
 tags:
   - infrastructure
 ---

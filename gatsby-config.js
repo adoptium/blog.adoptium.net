@@ -26,7 +26,6 @@ module.exports = {
       resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [`.mdx`, `.md`],
-        excerpt_separator: `<!-- excerpt-end -->`,
         gatsbyRemarkPlugins: [
           {
             resolve: `gatsby-remark-images`,

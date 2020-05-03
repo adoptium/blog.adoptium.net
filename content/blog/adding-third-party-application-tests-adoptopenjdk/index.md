@@ -2,6 +2,7 @@
 title: Adding third party application tests at AdoptOpenJDK
 date: "2018-02-09T23:13:37+00:00"
 author: mesbahalam
+description: Adding third party application tests into the automated testing at AdoptOpenJDK is easier now than it has ever been!
 tags:
   - test
 ---

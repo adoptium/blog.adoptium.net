@@ -2,6 +2,7 @@
 title: Reaping the benefits of openness
 date: "2018-04-28T19:50:55+00:00"
 author: timellison
+description: "AdoptOpenJDK has a simple mission.  We are all about delivering high quality, open binaries for OpenJDK-based technology. Achieving that simple mission requires a series of interesting decisions and actions that must be taken."
 tags:
   - overview
 ---

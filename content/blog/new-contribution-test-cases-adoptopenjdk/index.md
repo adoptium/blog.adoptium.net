@@ -2,6 +2,7 @@
 title: New contribution of test cases to AdoptOpenJDK
 date: "2017-09-14T08:50:09+00:00"
 author: simonrushton
+description: "We have contributed additional tests and a test framework the tests depend on, to the AdoptOpenJDK project in these repositories: openjdk-systemtest and stf."
 tags:
   - test
 ---

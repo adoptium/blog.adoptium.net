@@ -2,10 +2,11 @@
 title: "Adopt OpenJDK Docker Images now Available!"
 date: "2017-12-20T17:31:27+00:00"
 author: dinakarguniguntala
+description: We are pleased to announce the availability of the Adopt OpenJDK multi-arch docker images!
 tags:
   - announcement
 ---
-We are pleased to announce the availability of the Adopt OpenJDK **multi-arch** docker images !
+We are pleased to announce the availability of the Adopt OpenJDK **multi-arch** docker images!
 
 The docker images are [available](https://hub.docker.com/r/adoptopenjdk) for both Hotspot and Eclipse OpenJ9. These images are built and published nightly and are based on the nightly builds from [here](https://adoptopenjdk.net/nightly.html). For more information on the Dockerfiles and related scripts, see the [github](https://github.com/AdoptOpenJDK/openjdk-docker) repo.
 

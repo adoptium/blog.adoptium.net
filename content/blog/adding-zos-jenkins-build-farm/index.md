@@ -2,6 +2,7 @@
 title: Adding zOS to our Jenkins Build Farm
 date: "2017-08-16T09:48:53+00:00"
 author: georgeadams
+description: Adding zOS to a Jenkins server as an ssh agent can be a difficult task, that's why I've documented the steps that we were required follow to add our zOS machines to Jenkins.
 tags:
   - faq
   - infrastructure

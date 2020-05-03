@@ -2,9 +2,12 @@
 title: Sponsorship at AdoptOpenJDK
 date: "2019-04-11T12:00:00+00:00"
 author: georgeadams
+description: Do you want to sponsor the AdoptOpenJDK project?
+tags:
+  - sponsoring
 ---
 
-Do you want to sponsor the AdoptOpenJDK project?<!-- excerpt-end -->
+Do you want to sponsor the AdoptOpenJDK project?
 
 ![Collage with logos of AdoptOpenJDK sponsors as of April 2019](./sponsors.png)
 *Current AdoptOpenJDK sponsors, April 2019 ([https://adoptopenjdk.net/sponsors](https://adoptopenjdk.net/sponsors.html))*
