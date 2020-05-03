@@ -71,16 +71,16 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           }}
         >
           <li>
-            {previous && (
-              <Link to={previous.fields.postPath} rel="prev">
-                ← {previous.frontmatter.title}
+            {next && (
+              <Link to={next.fields.postPath} rel="next">
+                ← {next.frontmatter.title}
               </Link>
             )}
           </li>
           <li>
-            {next && (
-              <Link to={next.fields.postPath} rel="next">
-                {next.frontmatter.title} →
+            {previous && (
+              <Link to={previous.fields.postPath} rel="prev">
+                {previous.frontmatter.title} →
               </Link>
             )}
           </li>
