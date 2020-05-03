@@ -1,0 +1,43 @@
+import React from "react"
+import { Link } from "gatsby"
+
+import Byline from "./byline"
+import { rhythm } from "../utils/typography"
+
+/**
+ * Article intro displayed on front page, archive, author page.
+ */
+const ArticlePreview = (props) => {
+  const author = props.author
+  const date = props.date
+  const postPath = props.postPath
+  const title = props.title
+  const description = props.description
+  const excerpt = props.excerpt
+
+  return (
+    <article>
+      <header>
+        <h3
+          style={{
+            marginBottom: rhythm(1 / 4),
+          }}
+        >
+          <Link style={{ boxShadow: `none` }} to={postPath}>
+            {title}
+          </Link>
+        </h3>
+        <small><Byline author={author} date={date} /></small>
+      </header>
+      <section>
+        <p
+          dangerouslySetInnerHTML={{
+            __html: description || excerpt,
+          }}
+        />
+      </section>
+    </article>
+  )
+}
+
+export default ArticlePreview

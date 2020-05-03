@@ -3,9 +3,8 @@ import { Link, graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { rhythm } from "../utils/typography"
 import AuthorData from "../../content/authors.json"
-import Byline from "../components/byline"
+import ArticlePreview from "../components/articlepreview"
 
 const BlogPage = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -20,27 +19,15 @@ const BlogPage = ({ data, pageContext, location }) => {
         const title = node.frontmatter.title
         const author = AuthorData[node.frontmatter.author]
         return (
-          <article key={node.fields.slug}>
-            <header>
-              <h3
-                style={{
-                  marginBottom: rhythm(1 / 4),
-                }}
-              >
-                <Link style={{ boxShadow: `none` }} to={node.fields.postPath}>
-                  {title}
-                </Link>
-              </h3>
-              <small><Byline name={author.name} date={node.frontmatter.date} /></small>
-            </header>
-            <section>
-              <p
-                dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
-                }}
-              />
-            </section>
-          </article>
+          <ArticlePreview
+            key={node.fields.slug}
+            author={author.name}
+            date={node.frontmatter.date}
+            postPath={node.fields.postPath}
+            title={title}
+            description={node.frontmatter.description}
+            excerpt={node.excerpt}
+          />
         )
       })}
       <nav>

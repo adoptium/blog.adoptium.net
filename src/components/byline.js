@@ -1,10 +1,10 @@
 import React from "react"
 
 const Byline = (props) => {
-  const { name, date } = props
+  const { author, date } = props
 
   return (
-    <>{date} – posted by {name}</>
+    <>{date} – posted by {author}</>
   )
 }
 
