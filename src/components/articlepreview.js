@@ -30,11 +30,9 @@ const ArticlePreview = (props) => {
         <small><Byline author={author} date={date} /></small>
       </header>
       <section>
-        <p
-          dangerouslySetInnerHTML={{
-            __html: description || excerpt,
-          }}
-        />
+        <p>
+          {description || excerpt} <Link to={postPath}>Read more</Link>
+        </p>
       </section>
     </article>
   )
