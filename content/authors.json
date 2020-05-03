@@ -5,11 +5,41 @@
     "twitter": null,
     "github": "aahlenst"
   },
+  "dinakarguniguntala": {
+    "name": "Dinakar Guniguntala",
+    "summary": "Co-Maintainer of AdoptOpenJDK docker images. Eclipse OpenJ9 Cloud Optimization",
+    "twitter": null,
+    "github": "dinogun"
+  },
+  "enriquelacal": {
+    "name": "Enrique Lacal",
+    "summary": "IBM Developer working on Appsody",
+    "twitter": null,
+    "github": "enriquel8"
+  },
   "georgeadams": {
     "name": "George Adams",
     "summary": "Java Program Manager @microsoft, Chair of TSC @AdoptOpenJDK, Core Collaborator @nodejs",
     "twitter": "gdams",
     "github": "gdams_"
+  },
+  "geraintjones": {
+    "name": "Geraint Jones",
+    "summary": "Software developer at IBM, contributing to IBM API Connect Test and Monitor. Previously a member of the Infrastructure Team in IBM Runtime Technologies",
+    "twitter": null,
+    "github": "geraintwjones"
+  },
+  "jayashreekumar": {
+    "name": "Jayashree Kumar",
+    "summary": null,
+    "twitter": null,
+    "github": "jaysk1"
+  },
+  "lanxia": {
+    "name": "Lan Xia",
+    "summary": null,
+    "twitter": null,
+    "github": "llxia"
   },
   "martijnverburg": {
     "name": "Martijn Verburg",
@@ -17,16 +47,34 @@
     "twitter": "karianna",
     "github": "karianna"
   },
+  "mesbahalam": {
+    "name": "Mesbah Alam",
+    "summary": "Software developer at IBM Runtime Technologies",
+    "twitter": null,
+    "github": "Mesbah-Alam"
+  },
   "shelleylambert": {
     "name": "Shelley Lambert",
     "summary": "Software Verification @ AdoptOpenJDK / Eclipse OMR / Eclipse OpenJ9 - IBM Runtime Technologies",
     "twitter": null,
     "github": "smlambert"
   },
+  "simonrushton": {
+    "name": "Simon Rushton",
+    "summary": null,
+    "twitter": null,
+    "github": "lumpfish"
+  },
   "suechaplain": {
     "name": "Sue Chaplain",
     "summary": "Writer, editor, and advocate for all things Open Java",
     "twitter": null,
     "github": "suechaplain"
+  },
+  "timellison": {
+    "name": "Tim Ellison",
+    "summary": null,
+    "twitter": null,
+    "github": "tellison"
   }
 }

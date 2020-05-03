@@ -3,6 +3,9 @@ title: New Relic Joins AdoptOpenJDK Project To Strengthen Adoption of Java Techn
 date: "2019-09-18T19:28:51.0+00:00"
 author: martijnverburg
 description: "Today, we are excited to announce New Relic’s partnership with the community-led AdoptOpenJDK project. This program provides free and open-source binaries of the Java runtime and core platform (typically referred to as the JDK) for production and development use worldwide."
+tags:
+  - newrelic
+  - openjdk
 ---
 
 <GuestPost>

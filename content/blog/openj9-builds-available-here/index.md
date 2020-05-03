@@ -2,6 +2,8 @@
 title: OpenJ9 builds available here!
 date: "2017-09-17T12:00:00+00:00"
 author: georgeadams
+tags:
+  - openj9
 ---
 
 What a crazy last week it has been for everyone at AdoptOpenJDK. We are very excited to have begun adding OpenJ9 builds to our website! The interest has been overwhelming and it was incredible to see our website reach well over 250,000 hits after a small thread on Reddit quickly became much more!<!-- excerpt-end --> The picture below from our Cloudflare analytics tool shows very clearly when the post was added to Reddit and the views kept pouring in for the rest of the day.
