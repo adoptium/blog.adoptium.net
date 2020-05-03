@@ -37,7 +37,10 @@ const Author = (props) => {
     >
       <ProfilePic identifier={identifier} name={author.name} />
       <p>
-        Posted by <strong>{author.name}</strong> – {author.summary}.
+        Posted by <strong>{author.name}</strong>
+        {author.summary &&
+         <>– {author.summary}</>
+        }
         {` `}
         <GitHubLink name={author.github} />
         {` `}
