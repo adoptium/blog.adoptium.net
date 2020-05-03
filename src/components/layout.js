@@ -14,12 +14,12 @@ const Layout = ({ location, title, children }) => {
 
   if (location.pathname === rootPath) {
     header = (
-      <img class="logo" alt="AdoptOpenJDK logo" src={withPrefix(`adopt_logo_white.svg`)} />
+      <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix(`adopt_logo_white.svg`)} />
     )
   } else {
     header = (
       <Link to={`/`} style={{ boxShadow: `none`, color: `inherit` }}>
-        <img class="logo" alt="AdoptOpenJDK logo" src={withPrefix(`adopt_logo_white.svg`)} />
+        <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix(`adopt_logo_white.svg`)} />
       </Link>
     )
   }
