@@ -1,14 +1,21 @@
 import React from "react"
 import { Link, graphql } from "gatsby"
+import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Author from "../components/author"
 import { rhythm, scale } from "../utils/typography"
 import AuthorData from "../../content/authors.json"
+import GuestPost from "../components/guestpost"
+
+const components = {
+  GuestPost
+}
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.markdownRemark
+  const post = data.mdx
   const siteTitle = data.site.siteMetadata.title
   const { previous, next } = pageContext
   const author = AuthorData[post.frontmatter.author]
@@ -39,7 +46,9 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.date} – posted by {author.name}
           </p>
         </header>
-        <section dangerouslySetInnerHTML={{ __html: post.html }} />
+        <MDXProvider components={components}>
+          <MDXRenderer>{post.body}</MDXRenderer>
+        </MDXProvider>
         <hr
           style={{
             marginBottom: rhythm(1),
@@ -89,10 +98,10 @@ export const pageQuery = graphql`
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    mdx(fields: { slug: { eq: $slug } }) {
       id
       excerpt(pruneLength: 160)
-      html
+      body
       frontmatter {
         title
         author

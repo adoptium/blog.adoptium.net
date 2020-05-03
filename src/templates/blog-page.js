@@ -8,7 +8,7 @@ import AuthorData from "../../content/authors.json"
 
 const BlogPage = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title
-  const posts = data.allMarkdownRemark.edges
+  const posts = data.allMdx.edges
   const { currentPageNumber, previousPageNumber, nextPageNumber } = pageContext
   const previousPageLink = previousPageNumber === 1 ? `/` : `/page/${previousPageNumber}`
 
@@ -81,7 +81,7 @@ export const blogPageQuery = graphql`
         title
       }
     }
-    allMarkdownRemark(
+    allMdx(
       sort: { fields: [frontmatter___date], order: DESC }
       limit: $limit
       skip: $skip

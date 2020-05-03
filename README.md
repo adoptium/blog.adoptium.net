@@ -76,14 +76,28 @@ Example:
 Right after the front matter, add the following snippet to introduce the person that wrote the post:
 
 ```markdown
-*This a guest post by <further description>. – AdoptOpenJDK Team*
+<GuestPost>
+    Some introductory text
+</GuestPost>
+```
+
+This is going to render as:
+
+```
+<p className="guestpost">
+    <em>Some introductory text – AdoptOpenJDK Team</em>
+</p>
 ```
 
 Example:
 
 ```markdown
-*This a guest post by [Mark Weitzel](https://www.linkedin.com/in/weitzelm/), General Manager, New Relic One at New Relic. – AdoptOpenJDK Team*
+<GuestPost>
+    This a guest post by <a href="https://www.linkedin.com/in/weitzelm/">Mark Weitzel</a>, General Manager, New Relic One at New Relic.
+</GuestPost>
 ```
+
+**Note:** Markdown is not supported within `<GuestPost/>`. This is a limitation of MDX v1 and fixed in [MDX v2](https://github.com/mdx-js/mdx/issues/1041) which is currently being developed.
 
 ## Adding Authors
 

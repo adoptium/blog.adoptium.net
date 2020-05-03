@@ -5,7 +5,9 @@ author: martijnverburg
 description: "Today, we are excited to announce New Relic’s partnership with the community-led AdoptOpenJDK project. This program provides free and open-source binaries of the Java runtime and core platform (typically referred to as the JDK) for production and development use worldwide."
 ---
 
-*This a guest post by [Mark Weitzel](https://www.linkedin.com/in/weitzelm/), General Manager, New Relic One at New Relic. – AdoptOpenJDK Team*
+<GuestPost>
+    This a guest post by <a href="https://www.linkedin.com/in/weitzelm/">Mark Weitzel</a>, General Manager, New Relic One at New Relic.
+</GuestPost>
 
 Today, we are excited to announce New Relic’s partnership with the community-led AdoptOpenJDK project. This program provides free and open-source binaries of the Java runtime and core platform (typically referred to as the JDK) for production and development use worldwide.
 

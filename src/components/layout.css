@@ -14,3 +14,8 @@ body {
 .logo {
     height: 5em;
 }
+
+.guestpost {
+    padding: 0.5em;
+    background-color: #e3e3e3;
+}
