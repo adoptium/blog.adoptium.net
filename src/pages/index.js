@@ -29,6 +29,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { rhythm } from "../utils/typography"
 import AuthorData from "../../content/authors.json"
+import Byline from "../components/byline"
 
 const BlogIndex = ({ data, location }) => {
   const siteTitle = data.site.siteMetadata.title
@@ -53,7 +54,7 @@ const BlogIndex = ({ data, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date} – posted by {author.name}</small>
+              <small><Byline name={author.name} date={node.frontmatter.date} /></small>
             </header>
             <section>
               <p

@@ -31,7 +31,7 @@ const BlogPage = ({ data, pageContext, location }) => {
                   {title}
                 </Link>
               </h3>
-              <small><Byline author={author.name} date={node.frontmatter.date} /></small>
+              <small><Byline name={author.name} date={node.frontmatter.date} /></small>
             </header>
             <section>
               <p
