@@ -25,6 +25,7 @@ const BlogIndex = ({ data, location }) => {
             postPath={node.fields.postPath}
             title={title}
             description={node.frontmatter.description}
+            identifier={node.frontmatter.author}
             excerpt={node.excerpt}
           />
         )

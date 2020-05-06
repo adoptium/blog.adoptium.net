@@ -14,6 +14,7 @@ const ArticlePreview = (props) => {
   const title = props.title
   const description = props.description
   const excerpt = props.excerpt
+  const identifier = props.identifier
 
   return (
     <article>
@@ -27,7 +28,7 @@ const ArticlePreview = (props) => {
             {title}
           </Link>
         </h3>
-        <small><Byline author={author} date={date} /></small>
+        <Byline author={author} date={date} identifier={identifier}/>
       </header>
       <section>
         <p>

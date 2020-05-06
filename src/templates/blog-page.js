@@ -18,6 +18,7 @@ const BlogPage = ({ data, pageContext, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title
         const author = AuthorData[node.frontmatter.author]
+
         return (
           <ArticlePreview
             key={node.fields.slug}

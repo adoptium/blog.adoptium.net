@@ -4,6 +4,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fab } from '@fortawesome/free-brands-svg-icons'
 
 import { rhythm } from "../utils/typography"
+import SocialBar from "./socialbar"
 import "./layout.css"
 
 library.add(fab)
@@ -28,6 +29,9 @@ const Layout = ({ location, title, children }) => {
     <div>
       <header id="site-header-main">
         {header}
+        <div id="header-social-bar" style={{ top: "3rem" }}>
+          <SocialBar />
+        </div>
       </header>
       <div
         style={{

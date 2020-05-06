@@ -41,11 +41,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             style={{
               ...scale(-1 / 5),
               display: `block`,
-              marginBottom: rhythm(1),
             }}
           >
-            <Byline date={post.frontmatter.date} author={author.name} />
           </p>
+          <Byline date={post.frontmatter.date} author={author.name} identifier={post.frontmatter.author} />
         </header>
         <MDXProvider components={components}>
           <MDXRenderer>{post.body}</MDXRenderer>
