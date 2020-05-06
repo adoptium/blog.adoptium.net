@@ -1,8 +1,8 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Image from "gatsby-image"
+import React from "react";
+import { useStaticQuery, graphql } from "gatsby";
+import Image from "gatsby-image";
 
-import { rhythm } from "../utils/typography"
+import { rhythm } from "../utils/typography";
 
 const ProfilePicInline = (props) => {
   const data = useStaticQuery(graphql`
@@ -20,9 +20,9 @@ const ProfilePicInline = (props) => {
         }
       }
     }
-  `)
+  `);
 
-  const profilePic = data.avatar.edges.find(item => item.node.name === props.identifier)
+  const profilePic = data.avatar.edges.find(item => item.node.name === props.identifier);
   if (!profilePic) {
     return null;
   }
@@ -35,13 +35,13 @@ const ProfilePicInline = (props) => {
         marginLeft: rhythm(1 / 2),
         marginBottom: 0,
         minWidth: 30,
-        borderRadius: `100%`,
+        borderRadius: "100%",
       }}
       imgStyle={{
-        borderRadius: `50%`,
+        borderRadius: "50%",
       }}
     />
-  )
-}
+  );
+};
 
-export default ProfilePicInline
+export default ProfilePicInline;

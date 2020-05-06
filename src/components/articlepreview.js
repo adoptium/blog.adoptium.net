@@ -1,20 +1,20 @@
-import React from "react"
-import { Link } from "gatsby"
+import React from "react";
+import { Link } from "gatsby";
 
-import Byline from "./byline"
-import { rhythm } from "../utils/typography"
+import Byline from "./byline";
+import { rhythm } from "../utils/typography";
 
 /**
  * Article intro displayed on front page, archive, author page.
  */
 const ArticlePreview = (props) => {
-  const author = props.author
-  const date = props.date
-  const postPath = props.postPath
-  const title = props.title
-  const description = props.description
-  const excerpt = props.excerpt
-  const identifier = props.identifier
+  const author = props.author;
+  const date = props.date;
+  const postPath = props.postPath;
+  const title = props.title;
+  const description = props.description;
+  const excerpt = props.excerpt;
+  const identifier = props.identifier;
 
   return (
     <article>
@@ -24,7 +24,7 @@ const ArticlePreview = (props) => {
             marginBottom: rhythm(1 / 4),
           }}
         >
-          <Link style={{ boxShadow: `none` }} to={postPath}>
+          <Link style={{ boxShadow: "none" }} to={postPath}>
             {title}
           </Link>
         </h3>
@@ -36,7 +36,7 @@ const ArticlePreview = (props) => {
         </p>
       </section>
     </article>
-  )
-}
+  );
+};
 
-export default ArticlePreview
+export default ArticlePreview;

@@ -42,6 +42,11 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
+    "babel-eslint": "10.1.0",
+    "eslint": "6.8.0",
+    "eslint-config-react-app": "5.2.1",
+    "eslint-loader": "4.0.2",
+    "gatsby-plugin-eslint": "2.0.8",
     "gh-pages": "2.2.0",
     "prettier": "2.0.5"
   },
@@ -61,10 +66,13 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/adoptopenjdk/blog.git",
+    "lint": "eslint src/**/*.js",
+    "lint-fix": "npm run lint --- --fix",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "test": "npm run lint"
   }
 }

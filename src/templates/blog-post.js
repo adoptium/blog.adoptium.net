@@ -1,25 +1,25 @@
-import React from "react"
-import { Link, graphql } from "gatsby"
-import { MDXRenderer } from "gatsby-plugin-mdx"
-import { MDXProvider } from "@mdx-js/react"
+import React from "react";
+import { Link, graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
+import { MDXProvider } from "@mdx-js/react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import Author from "../components/author"
-import { rhythm, scale } from "../utils/typography"
-import AuthorData from "../../content/authors.json"
-import GuestPost from "../components/guestpost"
-import Byline from "../components/byline"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import Author from "../components/author";
+import { rhythm } from "../utils/typography";
+import AuthorData from "../../content/authors.json";
+import GuestPost from "../components/guestpost";
+import Byline from "../components/byline";
 
 const components = {
   GuestPost
-}
+};
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
-  const post = data.mdx
-  const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
-  const author = AuthorData[post.frontmatter.author]
+  const post = data.mdx;
+  const siteTitle = data.site.siteMetadata.title;
+  const { previous, next } = pageContext;
+  const author = AuthorData[post.frontmatter.author];
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -38,10 +38,11 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.title}
           </h1>
           <p
-            style={{
-              ...scale(-1 / 5),
-              display: `block`,
-            }}
+            // style={{
+            //   // eslint-disable-line
+            //   ...scale(1 / 5),
+            //   display: `block`,
+            // }}
           >
           </p>
           <Byline date={post.frontmatter.date} author={author.name} identifier={post.frontmatter.author} />
@@ -62,10 +63,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
       <nav>
         <ul
           style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "space-between",
+            listStyle: "none",
             padding: 0,
           }}
         >
@@ -86,10 +87,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         </ul>
       </nav>
     </Layout>
-  )
-}
+  );
+};
 
-export default BlogPostTemplate
+export default BlogPostTemplate;
 
 export const pageQuery = graphql`
   query BlogPostBySlug($slug: String!) {
@@ -110,4 +111,4 @@ export const pageQuery = graphql`
       }
     }
   }
-`
+`;
