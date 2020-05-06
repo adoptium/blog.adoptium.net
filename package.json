@@ -42,6 +42,7 @@
     "typography-theme-wordpress-2016": "0.16.19"
   },
   "devDependencies": {
+    "gh-pages": "2.2.0",
     "prettier": "2.0.5"
   },
   "homepage": "https://blog.adoptopenjdk.net/",
@@ -59,6 +60,7 @@
   },
   "scripts": {
     "build": "gatsby build",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public -r https://$GH_TOKEN@github.com/adoptopenjdk/blog.git",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
