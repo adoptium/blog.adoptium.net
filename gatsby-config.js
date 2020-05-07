@@ -131,6 +131,6 @@ module.exports = {
         pathToConfigModule: "src/utils/typography",
       },
     },
-    "gatsby-plugin-eslint",
+    "gatsby-plugin-eslint"
   ],
 };

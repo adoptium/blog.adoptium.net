@@ -1,38 +1,17 @@
 import React from "react";
-import { Link, withPrefix } from "gatsby";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 
 import { rhythm } from "../utils/typography";
-import SocialBar from "./socialbar";
+import NavBar from "./navbar";
 import "./layout.css";
 
 library.add(fab);
 
-const Layout = ({ location, children }) => {
-  const rootPath = withPrefix("/");
-  let header;
-
-  if (location.pathname === rootPath) {
-    header = (
-      <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix("adopt_logo_white.svg")} />
-    );
-  } else {
-    header = (
-      <Link to={"/"} style={{ boxShadow: "none", color: "inherit", lineHeight: "0px" }}>
-        <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix("adopt_logo_white.svg")} />
-      </Link>
-    );
-  }
-
+const Layout = ({ children }) => {
   return (
     <div>
-      <header id="site-header-main">
-        {header}
-        <div id="header-social-bar" style={{ top: "3rem" }}>
-          <SocialBar />
-        </div>
-      </header>
+      <NavBar/>
       <div
         style={{
           marginLeft: "auto",

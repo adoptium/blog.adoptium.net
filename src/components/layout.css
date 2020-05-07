@@ -2,66 +2,8 @@ body {
     background-color: #f5f5f5;
 }
 
-#site-header-main {
-    display: flex;
-    background-color: #152935;
-    background:url(../images/background.png);
-    justify-content: center;
-    align-items: center;
-    height: 6em;
-}
-
-.logo {
-    height: 2.5em;
-    margin-bottom: 0 !important;
-}
-
 .inline-block {
     display: inline-block;
-  }
-
-.social-icon {
-    margin: 0 0.35rem;
-}
-  
-.social-icon img {
-    height: 2rem;
-    margin: 0 auto;
-    opacity: 0.5;
-    transition-duration: 0.2s;
-}
-
-.social-icon img:hover {
-    opacity: 1;
-}
-
-.fa-social-icon {
-    color: #152935;
-}
-
-.fa-layers {
-    border-radius: 50px;
-    box-sizing: border-box;
-    border: 1px solid transparent;
-    transition: 0.5s;
-    background: #ffffff;
-    opacity: 0.5;
-}
-
-.fa-layers:hover {
-    background: #fff;
-    border-color: #000;
-    opacity: 1;
-    transform: scale(1.2);
-}
-
-#header-social-bar {
-    position: absolute;
-    margin-right: 2rem;
-    line-height: 1;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
 }
 
 .guestpost {
@@ -73,17 +15,6 @@ body {
     text-decoration: none;
     box-shadow: none;
 }
-
-.fa-layers {
-    position: relative;
-    display: inline-block;
-    width: 2em;
-    height: 2em;
-    line-height: 2em;
-    vertical-align: middle;
-    font-size:1.10em;
-}
-
 
 /* Mobile specific css */
 @media (max-width : 650px) {
