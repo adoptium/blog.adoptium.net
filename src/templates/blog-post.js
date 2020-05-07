@@ -10,6 +10,7 @@ import { rhythm } from "../utils/typography";
 import AuthorData from "../../content/authors.json";
 import GuestPost from "../components/guestpost";
 import Byline from "../components/byline";
+import ShareButton from "../components/share";
 
 const components = {
   GuestPost
@@ -38,14 +39,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             {post.frontmatter.title}
           </h1>
           <p
-            // style={{
-            //   // eslint-disable-line
-            //   ...scale(1 / 5),
-            //   display: `block`,
-            // }}
           >
           </p>
           <Byline date={post.frontmatter.date} author={author.name} identifier={post.frontmatter.author} />
+          <ShareButton location={location} siteMetadata={data.site.siteMetadata} post={post.frontmatter}/>
         </header>
         <MDXProvider components={components}>
           <MDXRenderer>{post.body}</MDXRenderer>
@@ -97,6 +94,10 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
+        siteUrl
+        social {
+          twitter
+        }
       }
     }
     mdx(fields: { slug: { eq: $slug } }) {
@@ -108,6 +109,7 @@ export const pageQuery = graphql`
         author
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
       }
     }
   }
