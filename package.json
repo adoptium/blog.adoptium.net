@@ -66,13 +66,13 @@
   "scripts": {
     "build": "gatsby build",
     "deploy": "gatsby build && gh-pages -d public -r https://$GH_TOKEN@github.com/adoptopenjdk/blog.git",
-    "lint": "eslint src/**/*.js",
+    "lint": "eslint *.js src/**/*.js",
     "lint-fix": "npm run lint --- --fix",
     "develop": "gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "npm run lint"
+    "test": "npm run lint && npm run build"
   }
 }

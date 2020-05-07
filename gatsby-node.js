@@ -1,11 +1,11 @@
-const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const path = require("path");
+const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage } = actions
+  const { createPage } = actions;
 
-  const authorJson = require(`./content/authors.json`)
-  const authorPage = path.resolve(`./src/templates/author-page.js`)
+  const authorJson = require("./content/authors.json");
+  const authorPage = path.resolve("./src/templates/author-page.js");
 
   for (let author of Object.keys(authorJson)) {
     createPage({
@@ -15,21 +15,18 @@ exports.createPages = async ({ graphql, actions }) => {
         author: author,
         limit: 10,
       },
-    })
+    });
   }
 
-
-  const blogPost = path.resolve(`./src/templates/blog-post.js`)
+  const blogPost = path.resolve("./src/templates/blog-post.js");
   const result = await graphql(
     `
       {
-        allMdx(
-          sort: { fields: [frontmatter___date], order: DESC }
-        ) {
+        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
           edges {
             node {
               fields {
-                slug,
+                slug
                 postPath
               }
               frontmatter {
@@ -40,17 +37,17 @@ exports.createPages = async ({ graphql, actions }) => {
         }
       }
     `
-  )
+  );
 
   if (result.errors) {
-    throw result.errors
+    throw result.errors;
   }
 
-  const posts = result.data.allMdx.edges
+  const posts = result.data.allMdx.edges;
 
   posts.forEach((post, index) => {
-    const previous = index === posts.length - 1 ? null : posts[index + 1].node
-    const next = index === 0 ? null : posts[index - 1].node
+    const previous = index === posts.length - 1 ? null : posts[index + 1].node;
+    const next = index === 0 ? null : posts[index - 1].node;
 
     createPage({
       path: `${post.node.fields.postPath}`,
@@ -61,15 +58,17 @@ exports.createPages = async ({ graphql, actions }) => {
         previous,
         next,
       },
-    })
-  })
+    });
+  });
 
-  const postsPerPage = 10
-  const numPages = Math.ceil(posts.length / postsPerPage)
+  const postsPerPage = 10;
+  const numPages = Math.ceil(posts.length / postsPerPage);
   Array.from({ length: numPages }).forEach((_, index) => {
-    const currentPageNumber = index + 1
-    const previousPageNumber = currentPageNumber === 1 ? null : currentPageNumber - 1
-    const nextPageNumber = currentPageNumber === numPages ? null : currentPageNumber + 1
+    const currentPageNumber = index + 1;
+    const previousPageNumber =
+      currentPageNumber === 1 ? null : currentPageNumber - 1;
+    const nextPageNumber =
+      currentPageNumber === numPages ? null : currentPageNumber + 1;
 
     createPage({
       path: `/page/${index + 1}`,
@@ -82,28 +81,28 @@ exports.createPages = async ({ graphql, actions }) => {
         previousPageNumber,
         nextPageNumber,
       },
-    })
-  })
-}
+    });
+  });
+};
 
 exports.onCreateNode = ({ node, actions, getNode }) => {
-  const { createNodeField } = actions
+  const { createNodeField } = actions;
 
-  if (node.internal.type === `Mdx`) {
-    const slug = createFilePath({ node, getNode })
-    const date = new Date(node.frontmatter.date)
-    const year = date.getFullYear()
-    const zeroPaddedMonth = `${date.getMonth() + 1}`.padStart(2, `0`)
+  if (node.internal.type === "Mdx") {
+    const slug = createFilePath({ node, getNode });
+    const date = new Date(node.frontmatter.date);
+    const year = date.getFullYear();
+    const zeroPaddedMonth = `${date.getMonth() + 1}`.padStart(2, "0");
 
     createNodeField({
-      name: `slug`,
+      name: "slug",
       node,
       value: slug,
-    })
+    });
     createNodeField({
-      name: 'postPath',
+      name: "postPath",
       node,
-      value: `/${year}/${zeroPaddedMonth}${slug}`
-    })
+      value: `/${year}/${zeroPaddedMonth}${slug}`,
+    });
   }
-}
+};
