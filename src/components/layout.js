@@ -19,7 +19,7 @@ const Layout = ({ location, children }) => {
     );
   } else {
     header = (
-      <Link to={"/"} style={{ boxShadow: "none", color: "inherit" }}>
+      <Link to={"/"} style={{ boxShadow: "none", color: "inherit", lineHeight: "0px" }}>
         <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix("adopt_logo_white.svg")} />
       </Link>
     );
