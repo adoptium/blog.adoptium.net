@@ -22,6 +22,10 @@ body {
         display: none;
     }
 
+    .byline {
+        font-size: 0.7em !important;
+    }
+
     h1 {
         font-weight: 500;
         font-size: 2em;

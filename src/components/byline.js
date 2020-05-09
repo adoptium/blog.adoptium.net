@@ -17,6 +17,7 @@ const Byline = (props) => {
         marginBottom: rhythm(1 / 2),
         textDecoration: "none"
       }}
+      className="byline"
     >
       {date} – posted by &nbsp; <Link to={href}>{author}</Link> <ProfilePicInline identifier={identifier} name={author.name} />
     </div>
