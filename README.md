@@ -108,4 +108,4 @@ Example:
         }
     }
     ```
-2. Optionally, add a profile picture in `content/assets/authors`. If the key in the `authors.json` is `janedoe`, name the image file `janedoe.jpg`.
+2. Your profile picture comes from github but this can be changed by adding a profile picture in `content/assets/authors`. If the key in the `authors.json` is `janedoe`, name the image file `janedoe.jpg`.

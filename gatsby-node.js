@@ -1,4 +1,7 @@
 const path = require("path");
+const fs = require("fs");
+const request = require("request");
+
 const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -8,6 +11,14 @@ exports.createPages = async ({ graphql, actions }) => {
   const authorPage = path.resolve("./src/templates/author-page.js");
 
   for (let author of Object.keys(authorJson)) {
+
+    fs.exists(`content/assets/authors/${author}.jpg`, function(exists) { 
+      if (! exists) {
+        let githubUsername = authorJson[author].github;
+        request(`https://github.com/${githubUsername}.png?size=250`).pipe(fs.createWriteStream(`content/assets/authors/${author}.jpg`));
+      } 
+    }); 
+
     createPage({
       path: `/author/${author}`,
       component: authorPage,
