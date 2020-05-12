@@ -3,6 +3,7 @@ title: SSH Key Management with KeyBox
 date: 2017-08-07T11:19:57+00:00
 author: georgeadams
 description: "Any project with more than a handful of machines will appreciate how much work is required to maintain them and ensure that access is kept to the minimum number of people. When we started creating our build farm we quickly realised how time-consuming this could be and so we wanted to find a neat solution to save us some time. One of the biggest issues that we found was giving people temporary access to machines. We would often find that the access was never revoked and this therefore became an administrators nightmare."
+featuredImage: "./keybox_edit_system.jpg"
 tags:
   - infrastructure
 ---

@@ -17,9 +17,10 @@ This is the source of the [AdoptOpenJDK blog](https://blog.adoptopenjdk.net/).
     title: Hello World
     date: "2020-04-21T12:20:00+00:00"
     author: janedoe
+    featuredImage: "./featured_image.png" (optional)
     ---
     ```
-    `title` is the title of your post as it appears on the website. `date` is the ISO 8601 timestamp of the publication date (`date -u +"%Y-%m-%dT%H:%M:%SZ"` generates that for you on the command line) and `author` the identifier of the author as specified in the `authors.json`.
+    `title` is the title of your post as it appears on the website. `date` is the ISO 8601 timestamp of the publication date (`date -u +"%Y-%m-%dT%H:%M:%SZ"` generates that for you on the command line) and `author` the identifier of the author as specified in the `authors.json`. `featuredImage` (optional) the relative path to the featured image.
 4. Write your post in Markdown. Save any images in the folder of your post alongside the `index.md`. Put the biggest resolution in there that you have. Responsive images will automatically be generated for you.
 
 To preview your post, start the local development server by running `gatsby develop` in the root directory of the repository.

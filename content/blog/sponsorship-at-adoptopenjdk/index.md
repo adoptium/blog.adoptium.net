@@ -3,6 +3,7 @@ title: Sponsorship at AdoptOpenJDK
 date: "2019-04-11T12:00:00+00:00"
 author: georgeadams
 description: Do you want to sponsor the AdoptOpenJDK project?
+featuredImage: "./sponsors.png"
 tags:
   - sponsoring
 ---

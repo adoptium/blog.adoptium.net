@@ -3,6 +3,7 @@ title: "The First Drop: Introducing AdoptOpenJDK Quality Assurance (AQA) v1.0"
 date: "2019-07-24T22:01:41+00:00"
 author: shelleylambert
 description: AdoptOpenJDK Quality Assurance (AQA) is a curated set of open tests that we run against our release builds at AdoptOpenJDK. These tests assess whether a binary meets the high quality standards expected by enterprise customers.
+featuredImage: "./clean-drop-of-water-liquid.jpg"
 tags:
   - test
   - AQA

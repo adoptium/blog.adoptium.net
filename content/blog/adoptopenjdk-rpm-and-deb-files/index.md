@@ -3,6 +3,7 @@ title: AdoptOpenJDK — RPM and DEB files
 date: "2019-05-20T12:00:00+00:00"
 author: georgeadams
 description: You asked and we listened! Official RPM and DEB files are now ready!
+featuredImage: "./terminal_packagelist.png"
 tags:
   - announcement
 ---

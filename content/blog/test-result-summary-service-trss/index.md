@@ -3,6 +3,7 @@ title: Test Result Summary Service (TRSS)
 date: "2018-08-17T14:53:34+00:00"
 author: lanxia
 description: "As we support more and more tests, projects and Jenkins servers, monitoring builds health and triaging tests daily is quickly becoming an overwhelming task. We are currently maintaining 6+ Jenkins servers both internally and externally."
+featuredImage: "./Dashboard.png"
 tags:
   - test
 ---

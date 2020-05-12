@@ -3,6 +3,7 @@ title: Jumpstarting Open Performance Testing
 date: "2018-08-05T04:29:41+00:00"
 author: shelleylambert
 description: Before I dabble in the juicy world of computer architectures and measuring and understanding performance implications, let me premise this entire post with a quick introduction to myself.
+featuredImage: "./ODM_Graph.png"
 tags:
   - test
 ---

@@ -27,13 +27,16 @@ import PropTypes from "prop-types";
 import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({ description, lang, meta, title }) => {
+const adoptSocialImage = require("../images/social-image.png");
+
+const SEO = ({ description, lang, meta, title, twitterCard }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
         site {
           siteMetadata {
             title
+            siteUrl
             description
             social {
               twitter
@@ -45,6 +48,10 @@ const SEO = ({ description, lang, meta, title }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+
+  if (twitterCard == null) {
+    twitterCard = adoptSocialImage;
+  }
 
   return (
     <Helmet
@@ -67,6 +74,10 @@ const SEO = ({ description, lang, meta, title }) => {
           content: metaDescription,
         },
         {
+          property: "og:image",
+          content: site.siteMetadata.siteUrl + twitterCard,
+        },
+        {
           property: "og:type",
           content: "website",
         },
@@ -85,6 +96,10 @@ const SEO = ({ description, lang, meta, title }) => {
         {
           name: "twitter:description",
           content: metaDescription,
+        },
+        {
+          name: "twitter:image",
+          content: site.siteMetadata.siteUrl + twitterCard,
         },
       ].concat(meta)}
     />

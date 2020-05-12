@@ -22,11 +22,18 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const { previous, next } = pageContext;
   const author = AuthorData[post.frontmatter.author];
 
+  let twitterCard = null;
+
+  if (post.frontmatter && post.frontmatter.featuredImage) {
+    twitterCard = post.frontmatter.featuredImage.childImageSharp.sizes.src;
+  }
+
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
         title={post.frontmatter.title}
         description={post.frontmatter.description || post.excerpt}
+        twitterCard={twitterCard}
       />
       <article>
         <header>
@@ -109,6 +116,13 @@ export const pageQuery = graphql`
         author
         date(formatString: "MMMM DD, YYYY")
         description
+        featuredImage {
+          childImageSharp {
+            sizes(maxWidth: 630) {
+              ...GatsbyImageSharpSizes
+            }
+          }
+        }
         tags
       }
     }

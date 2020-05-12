@@ -3,6 +3,7 @@ title: "Adopt OpenJDK Docker Images now Available!"
 date: "2017-12-20T17:31:27+00:00"
 author: dinakarguniguntala
 description: We are pleased to announce the availability of the Adopt OpenJDK multi-arch docker images!
+featuredImage: "./support_matrix.jpg"
 tags:
   - announcement
 ---

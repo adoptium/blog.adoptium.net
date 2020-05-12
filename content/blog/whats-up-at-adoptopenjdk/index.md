@@ -3,6 +3,7 @@ title: What’s up at AdoptOpenJDK
 date: "2019-04-08T12:00:00+00:00"
 author: georgeadams
 description: "There have been many milestones reached at AdoptOpenJDK"
+featuredImage: "./dash_20million.png"
 ---
 
 ## 20 Million Downloads

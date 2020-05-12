@@ -2,6 +2,7 @@
 title: "Testing Java: Help Me Count the Ways"
 date: "2017-12-24T05:12:21+00:00"
 author: shelleylambert
+featuredImage: "./adoptJenkins-300x104.jpg"
 tags:
   - test
 ---
