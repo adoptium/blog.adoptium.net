@@ -10,7 +10,7 @@ const GitHubLink = (props) => {
   }
 
   return (
-    <a href={`https://github.com/${props.name}`}><FontAwesomeIcon icon={["fab", "github"]} /></a>
+    <a className="no-underline" href={`https://github.com/${props.name}`}><FontAwesomeIcon icon={["fab", "github"]} /></a>
   );
 };
 
@@ -20,9 +20,20 @@ const TwitterLink = (props) => {
   }
 
   return (
-    <a href={`https://twitter.com/${props.name}`}><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
+    <a className="no-underline" href={`https://twitter.com/${props.name}`}><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
   );
 };
+
+const LinkedinLink = (props) => {
+  if (!props.name) {
+    return null;
+  }
+
+  return (
+    <a className="no-underline" href={`https://www.linkedin.com/in/${props.name}`}><FontAwesomeIcon icon={["fab", "linkedin"]} /></a>
+  );
+};
+
 
 const AuthorBio = (props) => {
   const author = props.author;
@@ -44,6 +55,8 @@ const AuthorBio = (props) => {
         <GitHubLink name={author.github} />
         {" "}
         <TwitterLink name={author.twitter} />
+        {" "}
+        <LinkedinLink name={author.linkedin} />
       </p>
     </div>
   );
