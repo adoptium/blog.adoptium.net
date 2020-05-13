@@ -36,7 +36,7 @@ For the full matrix of supported platforms read the documentation [here](https:/
 1. Import the official AdoptOpenJDK GPG key
     
     ```
-    wget -qO - [https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public](https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public) | sudo apt-key add -
+    wget -qO - https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public | sudo apt-key add -
     ```
 
 2. Import the AdoptOpenJDK DEB repo using `add-apt-repository`. If you get a `command not found` error then try `apt-get install -y software-properties-common` first.
@@ -60,7 +60,7 @@ For the full matrix of supported platforms read the documentation [here](https:/
     cat <<EOF > /etc/yum.repos.d/adoptopenjdk.repo
     [AdoptOpenJDK]
     name=AdoptOpenJDK
-    baseurl=[http://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/centos/7/$](http://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/centos/7/$)(uname -m)
+    baseurl=https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/centos/7/$(uname -m)
     enabled=1
     gpgcheck=1
     gpgkey=https://adoptopenjdk.jfrog.io/adoptopenjdk/api/gpg/key/public
@@ -79,7 +79,7 @@ For the full matrix of supported platforms read the documentation [here](https:/
 1. Import the RPM repo making sure to change the openSUSE version if you are not using **OpenSUSE 15.0**. RPMs are also available for SLES 12 and 15. To check the full list of versions supported take a look at [https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm](https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/).
 
     ```
-    zypper ar -f [http://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/15.0/](http://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/15.0/x86_64/)[$](http://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/centos/7/$)(uname -m) adoptopenjdk
+    zypper ar -f https://adoptopenjdk.jfrog.io/adoptopenjdk/rpm/opensuse/15.0/x86_64/$(uname -m) adoptopenjdk
     ```
 
 2. Install the AdoptOpenJDK version you require
