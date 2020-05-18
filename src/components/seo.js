@@ -83,10 +83,14 @@ const SEO = ({ description, lang, meta, title, twitterCard }) => {
         },
         {
           name: "twitter:card",
-          content: "summary",
+          content: "summary_large_image",
         },
         {
           name: "twitter:creator",
+          content: site.siteMetadata.social.twitter,
+        },
+        {
+          name: "twitter:site",
           content: site.siteMetadata.social.twitter,
         },
         {
