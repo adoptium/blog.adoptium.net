@@ -49,7 +49,7 @@
     "eslint-config-react-app": "5.2.1",
     "eslint-loader": "4.0.2",
     "gatsby-plugin-eslint": "2.0.8",
-    "gh-pages": "2.2.0",
+    "gh-pages": "3.0.0",
     "prettier": "2.0.5"
   },
   "homepage": "https://blog.adoptopenjdk.net/",
