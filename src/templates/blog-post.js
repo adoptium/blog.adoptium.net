@@ -11,6 +11,7 @@ import AuthorData from "../../content/authors.json";
 import GuestPost from "../components/guestpost";
 import Byline from "../components/byline";
 import ShareButton from "../components/share";
+import Tags from "../components/tags";
 
 const components = {
   GuestPost
@@ -21,6 +22,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
   const author = AuthorData[post.frontmatter.author];
+  const tags = post.frontmatter.tags;
 
   let twitterCard = null;
 
@@ -54,8 +56,10 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
         <MDXProvider components={components}>
           <MDXRenderer>{post.body}</MDXRenderer>
         </MDXProvider>
+        <Tags tags={tags}/>
         <hr
           style={{
+            marginTop: rhythm(1),
             marginBottom: rhythm(1),
           }}
         />
@@ -116,6 +120,7 @@ export const pageQuery = graphql`
         author
         date(formatString: "MMMM DD, YYYY")
         description
+        tags
         featuredImage {
           childImageSharp {
             sizes(maxWidth: 630) {

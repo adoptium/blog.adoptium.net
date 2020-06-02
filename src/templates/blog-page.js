@@ -29,6 +29,7 @@ const BlogPage = ({ data, pageContext, location }) => {
             description={node.frontmatter.description}
             identifier={node.frontmatter.author}
             excerpt={node.excerpt}
+            tags={node.frontmatter.tags}
           />
         );
       })}
@@ -88,6 +89,7 @@ export const blogPageQuery = graphql`
             title
             description
             author
+            tags
           }
         }
       }

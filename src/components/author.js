@@ -1,5 +1,6 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "gatsby";
 
 import ProfilePic from "./profilepic";
 import { rhythm } from "../utils/typography";
@@ -37,6 +38,7 @@ const LinkedinLink = (props) => {
 const Author = (props) => {
   const author = props.author;
   const identifier = props.identifier;
+  const href = `/author/${identifier}`;
 
   return (
     <div
@@ -47,7 +49,7 @@ const Author = (props) => {
     >
       <ProfilePic identifier={identifier} name={author.name} />
       <p>
-        Posted by <strong>{author.name}</strong>
+        Posted by <Link to={href}>{author.name}</Link>
         {author.summary &&
          <>– {author.summary}</>
         }

@@ -1,28 +1,28 @@
 import React from "react";
+
 import { graphql } from "gatsby";
 
-import AuthorBio from "../components/authorbio";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import AuthorData from "../../content/authors.json";
-import ArticlePreview from "../components/articlepreview";
 import { rhythm } from "../utils/typography";
+import ArticlePreview from "../components/articlepreview";
+import AuthorData from "../../content/authors.json";
 
-
-const AuthorPage = ({ data, pageContext, location }) => {
+const Tags = ({ pageContext, data, location }) => {
   const siteTitle = data.site.siteMetadata.title;
 
-  const author = AuthorData[pageContext.author];
-  const posts = data.allMdx.edges;
+  const tags = data.allMdx.edges;
+
+
+  console.log(pageContext);
 
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
-        title={author.name}
-        description={author.summary}
+        title={pageContext.tag}
+        description={pageContext.tag}
       />
-      <h1>{author.name}</h1>
-      <AuthorBio identifier={pageContext.author} author={author} />
+      <h1>{pageContext.tag}</h1>
 
       <hr
         style={{
@@ -30,8 +30,9 @@ const AuthorPage = ({ data, pageContext, location }) => {
         }}
       />
 
-      {posts.map(({ node }) => {
+      {tags.map(({ node }) => {
         const title = node.frontmatter.title;
+        const author = AuthorData[node.frontmatter.author];
         return (
           <ArticlePreview
             key={node.fields.slug}
@@ -40,30 +41,28 @@ const AuthorPage = ({ data, pageContext, location }) => {
             postPath={node.fields.postPath}
             title={title}
             description={node.frontmatter.description}
-            identifier={pageContext.author}
+            identifier={node.frontmatter.author}
             excerpt={node.excerpt}
-            tags={node.frontmatter.tags}
           />
         );
       })}
     </Layout>
   );
-
 };
 
-export default AuthorPage;
 
-export const authorPageQuery = graphql`
-  query authorPageQuery($author: String!, $limit: Int!) {
+export default Tags;
+
+export const tagsPageQuery = graphql`
+  query tagsPageQuery($tag: String!) {
     site {
       siteMetadata {
         title
       }
     }
     allMdx(
-        filter: {frontmatter: {author: {eq: $author}}}
+        filter: {frontmatter: {tags: {eq: $tag}}}
         sort: { fields: [frontmatter___date], order: DESC }
-        limit: $limit
     ) {
         edges {
         node {
@@ -75,7 +74,7 @@ export const authorPageQuery = graphql`
                 date(formatString: "MMMM DD, YYYY")
                 title
                 description
-                tags
+                author
             }
         }
       }

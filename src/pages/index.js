@@ -17,6 +17,7 @@ const BlogIndex = ({ data, location }) => {
       {posts.map(({ node }) => {
         const title = node.frontmatter.title;
         const author = AuthorData[node.frontmatter.author];
+
         return (
           <ArticlePreview
             key={node.fields.slug}
@@ -27,6 +28,7 @@ const BlogIndex = ({ data, location }) => {
             description={node.frontmatter.description}
             identifier={node.frontmatter.author}
             excerpt={node.excerpt}
+            tags={node.frontmatter.tags}
           />
         );
       })}
@@ -80,6 +82,7 @@ export const pageQuery = graphql`
             date(formatString: "MMMM DD, YYYY")
             title
             description
+            tags
           }
         }
       }
