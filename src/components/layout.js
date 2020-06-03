@@ -1,10 +1,22 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
+import Darkmode from "darkmode-js";
 
 import { rhythm } from "../utils/typography";
 import NavBar from "./navbar";
 import "./layout.css";
+
+const options = {
+  mixColor: "#fff", // default: '#fff'
+  backgroundColor: "#fff",  // default: '#fff'
+  buttonColorDark: "#100f2c",  // default: '#100f2c'
+  buttonColorLight: "#fff", // default: '#fff'
+  label: "🌓", // default: ''
+  autoMatchOsTheme: false // default: true
+};
+
+new Darkmode(options).showWidget();
 
 library.add(fab);
 

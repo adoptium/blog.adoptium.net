@@ -27,7 +27,7 @@ const NavBar = (location) => {
   }
 
   return (
-    <header id="site-header-main" style={{ display: "flex", backgroundColor: "#152935", backgroundImage: `url(${Background})`, justifyContent: "center", alignItems: "center", height: "6em"}}>
+    <header className="darkmode-ignore" id="site-header-main" style={{ display: "flex", backgroundColor: "#152935", backgroundImage: `url(${Background})`, justifyContent: "center", alignItems: "center", height: "6em"}}>
       {header}
       <SocialBar />
     </header>
