@@ -11,6 +11,13 @@ body {
     background-color: #e3e3e3;
 }
 
+.comments {
+    margin-top: 1em;
+    padding: 0.5em;
+    background-color: #e3e3e3;
+    border-radius: 4px;
+}
+
 .no-underline {
     text-decoration: none;
     box-shadow: none;

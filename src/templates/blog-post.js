@@ -12,6 +12,7 @@ import GuestPost from "../components/guestpost";
 import Byline from "../components/byline";
 import ShareButton from "../components/share";
 import Tags from "../components/tags";
+import Comments from "../components/comments";
 
 const components = {
   GuestPost
@@ -57,6 +58,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <MDXRenderer>{post.body}</MDXRenderer>
         </MDXProvider>
         <Tags tags={tags}/>
+        <Comments/>
         <hr
           style={{
             marginTop: rhythm(1),
