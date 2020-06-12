@@ -1,5 +1,6 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Darkmode from "darkmode-js";
 
@@ -18,7 +19,7 @@ const options = {
 
 new Darkmode(options).showWidget();
 
-library.add(fab);
+library.add(fab, fas);
 
 const Layout = ({ children }) => {
   return (

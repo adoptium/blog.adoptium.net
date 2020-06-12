@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "gatsby";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { css } from "glamor";
 
@@ -30,6 +31,13 @@ const SocialBar = () => {
   return (
     <>
       <div id="header-social-bar" style={socialIconStyle}>
+        <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
+          <Link to={"/rss.xml"} className="light-link no-underline">
+            <span className={`${faLayerStyleHover} fa-layers`}>
+              <FontAwesomeIcon className="fa-social-icon" size="1x" icon={["fas", "rss"]} style={faSocialIconStyle} />
+            </span>
+          </Link>
+        </div>
         <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
           <a
             href="https://twitter.com/adoptopenjdk"
