@@ -1,8 +1,8 @@
 ---
-title: AdoptOpenJDK to Join the Eclipse Foundation
+title: AdoptOpenJDK to join the Eclipse Foundation
 date: "2020-06-19T09:00:00+00:00"
 author: tsc
-description: AdoptOpenJDK will Join the Eclipse Foundation and rebrand as Adoptium.
+description: AdoptOpenJDK will join the Eclipse Foundation and rebrand as Adoptium.
 featuredImage: "./adopt_to_eclipse.png"
 tags:
   - AdoptOpenJDK
@@ -18,9 +18,9 @@ _Providing the Java community with rock-solid runtimes and associated tools that
 
 AdoptOpenJDK has proven to be a runaway success, with [over 165M downloads](https://dash-v2.adoptopenjdk.net/) of our binary distributions now powering Java workloads across the globe. However, technology is not built in isolation, and we consider the greatest success of AdoptOpenJDK to be the coming together of hundreds of people in an active, diverse, and enthusiastic community.
 
-Currently, the AdoptOpenJDK project is legally backed by the non-profit [London Java Community CIC](https://londonjavacommunity.co.uk/) (aka the London Java User Group or LJC), which has served us well up to now. The LJC has kindly handled our accounts, signed contracts, and managed our legal obligations. However, now the time has come for AdoptOpenJDK to grow into its next stage of evolution. This next stage is a move to a large established Software Foundation.
+Currently, the AdoptOpenJDK project is legally backed by the non-profit [London Java Community CIC](https://londonjavacommunity.co.uk/) (aka the London Java User Group or LJC), which has served us well up to now. The LJC has kindly handled our accounts, signed contracts, and managed our legal obligations. However, now the time has come for AdoptOpenJDK to grow into its next stage of evolution. This next stage is a move to a large established software foundation.
 
-## Why we are moving
+## Why We Are Moving
 In every open source project’s life comes a time to take the necessary steps to enshrine its independence and longevity in a proven cultural and legal framework. A project of AdoptOpenJDK’s size and scale also needs an awful lot of logistical support, and the cracks in some places are starting to show!
 
 [The Technical Steering Committee (TSC)](https://github.com/AdoptOpenJDK/TSC#the-tsc) of AdoptOpenJDK investigated several options for moving AdoptOpenJDK to a software foundation or similar structure.  We researched many alternatives, and ultimately the [Eclipse Foundation](https://www.eclipse.org/) came out as the clear front runner.

@@ -3,7 +3,7 @@
     "name": "Technical Steering Committee",
     "summary": "The AdoptOpenJDK Technical Steering Committee (TSC) ",
     "twitter": "adoptopenjdk",
-    "github": null
+    "github": "adoptopenjdk"
   },
   "andreasahlenstorf": {
     "name": "Andreas Ahlenstorf",
