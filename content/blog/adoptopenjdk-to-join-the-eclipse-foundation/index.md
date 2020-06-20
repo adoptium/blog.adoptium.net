@@ -38,7 +38,7 @@ As part of a move to the Eclipse Foundation, we will undergo a project rename. O
 The new project name will be Eclipse Adoptium. Adoptium is a compound word of “AdoptOpenJDK” and the Latin suffix “-ium”.
 
 ```java
-var newProjectName = new String("Eclipse Adoptium");
+var newProjectName = "Eclipse Adoptium";
 ```
 
 ## What It Means for Our Users
