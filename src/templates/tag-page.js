@@ -13,9 +13,6 @@ const Tags = ({ pageContext, data, location }) => {
 
   const tags = data.allMdx.edges;
 
-
-  console.log(pageContext);
-
   return (
     <Layout location={location} title={siteTitle}>
       <SEO
