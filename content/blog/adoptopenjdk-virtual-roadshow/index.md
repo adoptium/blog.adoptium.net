@@ -18,9 +18,12 @@ AdoptOpenJDK is doing a virtual roadshow of the Java User Groups. We plan to rea
 AdoptOpenJDK is the leading provider of OpenJDK™ binaries. With over 170 million downloads in the last year, it is successfully used by many enterprises and ready for your production usage of Java™. AdoptOpenJDK provides prebuilt OpenJDK binaries from a fully open source set of build scripts and infrastructure. This talk will cover how we build on over 15 different platforms, execute over 87 million tests and distribute OpenJDK binaries to millions of users. We will also cover how AdoptOpenJDK binaries compare against the Java binaries that you use today. If you're curious to understand the difference between OpenJDK, Oracle Java, AdoptOpenJDK and all the other distributions, then this is the talk for you!
 
 ## Speakers
-**George Adams** is the Java Program Manager at Microsoft and is the recently appointed chair of the Technical Steering Committee at AdoptOpenJDK. Since co-founding AdoptOpenJDK in 2016 he has been leading the community outreach efforts at AdoptOpenJDK and is heavily involved in the Java ecosystem. George also contributes to both the OpenJS Foundation and the Node.js Foundation where he is a core collaborator and plays an active role in several of the workgroups.
 
-**Hendrik Ebbers** is a co-founder of Karakun AG and lives in Dortmund, Germany. He is the founder and leader of the Java User Group Dortmund and gives talks and presentations in user groups and conferences. His JavaFX book "Mastering JavaFX 8 Controls" was released in 2014 by Oracle press. Hendrik is a JavaOne Rockstar, JSR expert group member and Java Champion. Hendrik is member of the AdoptOpenJDK TSC.
+![George and Hendrik](./speakers.png)
+
+**George Adams** is the Java Program Manager at [Microsoft](https://www.microsoft.com) and is the recently appointed chair of the Technical Steering Committee at AdoptOpenJDK. Since co-founding AdoptOpenJDK in 2016 he has been leading the community outreach efforts at AdoptOpenJDK and is heavily involved in the Java ecosystem. George also contributes to both the OpenJS Foundation and the Node.js Foundation where he is a core collaborator and plays an active role in several of the workgroups.
+
+**Hendrik Ebbers** is a co-founder of [Karakun AG](https://www.karakun.com) and lives in Dortmund, Germany. He is the founder and leader of the Java User Group Dortmund and gives talks and presentations in user groups and conferences. His JavaFX book "Mastering JavaFX 8 Controls" was released in 2014 by Oracle press. Hendrik is a JavaOne Rockstar, JSR expert group member and Java Champion. Hendrik is a member of the AdoptOpenJDK TSC.
 
 ## Scheduled Events
 | Date | JUG | Link |
