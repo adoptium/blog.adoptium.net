@@ -1,5 +1,5 @@
 ---
-title: AdoptOpenJDK 8u262, 11.0.8, and 14.0.8 Available
+title: AdoptOpenJDK 8u262, 11.0.8, and 14.0.2 Available
 date: "2020-07-16T12:00:00+00:00"
 author: andreasahlenstorf
 description: AdoptOpenJDK is happy to announce the immediate availability of AdoptOpenJDK 8u262, 11.0.8, and 14.0.2. Binaries are available for download of OpenJDK and Eclipse OpenJ9 (with OpenJDK class libraries). As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
