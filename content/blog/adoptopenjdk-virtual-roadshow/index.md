@@ -33,6 +33,7 @@ AdoptOpenJDK is the leading provider of OpenJDK™ binaries. With over 170 milli
 | 11/08/2020  11:00 EDT | Connecticut JUG  | tbd |
 | 20/08/2020 | JUG Dortmund  | tbd |
 | 19th-22nd October | Eclipse Con 2020 | https://www.eclipsecon.org/2020/sessions/adoptopenjdk-making-java-free-again |
+| 29/10/2020 | JCON 2020 | https://jcon.one/en/ |
 
 ## Upcoming Events
 We will update this as soon as we have dates/links.
