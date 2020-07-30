@@ -57,7 +57,7 @@ You can then choose between these auto-upgrading casks and install them with `br
 * adoptopenjdk-openj9
 * adoptopenjdk-openj9-jre
 
-## A Note on Binaries for 32-bit ARM
+## A Note on Binaries for 32-bit ARM <a name="a-note-on-binaries-for-32-bit-arm"></a>
 
 Because we're short on machines with 32-bit ARM CPUs and those we have are also incredibly slow, our testing capacity is minimal. As a result, we haven't caught a bug in the last release that caused certain SSL connections to fail. This has been fixed in the meantime. We are already looking into procuring additional capacity that should make it possible to re-enable our entire test suite and deliver binaries that match our quality criteria.
 
