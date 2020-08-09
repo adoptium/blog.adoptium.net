@@ -31,7 +31,7 @@ AdoptOpenJDK is the leading provider of OpenJDK™ binaries. With over 170 milli
 | 21/07/ 2020 18:30 EDT | Knoxville JUG  |  https://www.meetup.com/KnoxJava/events/nmfmbrybckbcc/ |
 | 06/08/2020  19:00 GMT+3 | JUG Istanbul |  https://www.meetup.com/Istanbul-Java-User-Group/events/271767087 |  
 | 11/08/2020  11:00 EDT | Connecticut JUG  | tbd | https://www.meetup.com/Connecticut-Java-Users-Group/events/271934054/
-| 12/08/2020 | JUG Switzerland  | tbd |
+| 12/08/2020 | JUG Switzerland  | https://www.jug.ch/html/events/2020/adoptopenjdk.html |
 | 18/08/2020 | JUG Dortmund  | https://www.meetup.com/JUG-Dortmund/events/272181147/ |
 | 19th-22nd October | Eclipse Con 2020 | https://www.eclipsecon.org/2020/sessions/adoptopenjdk-making-java-free-again |
 | 22/09/2020 | JUG Freiburg  | tbd |
