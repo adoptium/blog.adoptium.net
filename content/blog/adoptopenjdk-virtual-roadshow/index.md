@@ -44,5 +44,8 @@ We will update this as soon as we have dates/links.
 - Rochester (NY) JUG
 - SouJava
 
+## Slide Deck
+You can find our slides at [Speakerdeck](https://speakerdeck.com/hendrikebbers/adoptopenjdk-making-java-free-again).
+
 ## Your JUG?
 If you would like to host "AdoptOpenJDK - Making Java free again" at your local JUG then please email tsc@adoptopenjdk.net.
