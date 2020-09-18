@@ -26,15 +26,19 @@ AdoptOpenJDK is the leading provider of OpenJDK™ binaries. With over 170 milli
 **Hendrik Ebbers** is a co-founder of [Karakun AG](https://www.karakun.com) and lives in Dortmund, Germany. He is the founder and leader of the Java User Group Dortmund and gives talks and presentations in user groups and conferences. His JavaFX book "Mastering JavaFX 8 Controls" was released in 2014 by Oracle press. Hendrik is a JavaOne Rockstar, JSR expert group member and Java Champion. Hendrik is a member of the AdoptOpenJDK TSC.
 
 ## Scheduled Events
-| Date | JUG | Link |
+| Date | JUG / Conference | Link |
 |---|---|---|
-| 21/07/ 2020 18:30 EDT | Knoxville JUG  |  https://www.meetup.com/KnoxJava/events/nmfmbrybckbcc/ |
+| 21/07/2020 18:30 EDT | Knoxville JUG  |  https://www.meetup.com/KnoxJava/events/nmfmbrybckbcc/ |
 | 06/08/2020  19:00 GMT+3 | JUG Istanbul |  https://www.meetup.com/Istanbul-Java-User-Group/events/271767087 |  
 | 11/08/2020  11:00 EDT | Connecticut JUG  | https://www.meetup.com/Connecticut-Java-Users-Group/events/271934054/ |
 | 12/08/2020 | JUG Switzerland  | https://www.jug.ch/html/events/2020/adoptopenjdk.html |
 | 18/08/2020 | JUG Dortmund  | https://www.meetup.com/JUG-Dortmund/events/272181147/ |
 | 19th-22nd October | Eclipse Con 2020 | https://www.eclipsecon.org/2020/sessions/adoptopenjdk-making-java-free-again |
-| 22/09/2020 | JUG Freiburg  | tbd |
+| 22/09/2020 | JUG Freiburg | tbd |
+| 24/09/2020 | Java Forum Stuttgart | https://www.java-forum-stuttgart.de/de/Slot+6+2020.html#C6 |
+| 03/10/2020 | JConf Mexico 2020 | tbd |
+| 02/11/2020 | DWX Developer Week | https://www.developer-week.de/programm-2020/#/talk/adoptopenjdk-was-ist-das-eigentlich |
+| 04/11/2020 | wJAX | https://jax.de/core-java-jvm-languages/adoptopenjdk-was-ist-das-eigentlich/ |
 | 29/10/2020 | JCON 2020 | https://jcon.one/en/ |
 
 ## Upcoming Events
