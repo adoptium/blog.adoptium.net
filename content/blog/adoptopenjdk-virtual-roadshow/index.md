@@ -34,9 +34,8 @@ AdoptOpenJDK is the leading provider of OpenJDK™ binaries. With over 170 milli
 | 12/08/2020 | JUG Switzerland  | https://www.jug.ch/html/events/2020/adoptopenjdk.html |
 | 18/08/2020 | JUG Dortmund  | https://www.meetup.com/JUG-Dortmund/events/272181147/ |
 | 19th-22nd October | Eclipse Con 2020 | https://www.eclipsecon.org/2020/sessions/adoptopenjdk-making-java-free-again |
-| 22/09/2020 | JUG Freiburg | tbd |
 | 24/09/2020 | Java Forum Stuttgart | https://www.java-forum-stuttgart.de/de/Slot+6+2020.html#C6 |
-| 03/10/2020 | JConf Mexico 2020 | tbd |
+| 03/10/2020 | JConf Mexico 2020 | https://www.jconfmex.org |
 | 02/11/2020 | DWX Developer Week | https://www.developer-week.de/programm-2020/#/talk/adoptopenjdk-was-ist-das-eigentlich |
 | 04/11/2020 | wJAX | https://jax.de/core-java-jvm-languages/adoptopenjdk-was-ist-das-eigentlich/ |
 | 29/10/2020 | JCON 2020 | https://jcon.one/en/ |
@@ -47,6 +46,7 @@ We will update this as soon as we have dates/links.
 - Guadalajara JUG
 - Rochester (NY) JUG
 - SouJava
+- JUG Freiburg
 
 ## Recorded Sessions
 Some of our sessions have been recorded:
