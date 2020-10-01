@@ -52,6 +52,7 @@ We will update this as soon as we have dates/links.
 Some of our sessions have been recorded:
 - [AdoptOpenJDK at JUG Switzerland](https://www.youtube.com/watch?v=KvpibYDRSUo)
 - [AdoptOpenJDK at Istanbul JUG](https://www.youtube.com/watch?v=jUSzWj0zMus)
+- [AdoptOpenJDK at JUG Dortmund](https://www.youtube.com/watch?v=SIcNnWSirkE)
 
 ## Slide Deck
 You can find our slides at [Speakerdeck](https://speakerdeck.com/hendrikebbers/adoptopenjdk-making-java-free-again).
