@@ -33,7 +33,7 @@
     "gatsby-source-filesystem": "2.3.34",
     "gatsby-transformer-sharp": "2.5.17",
     "glamor": "2.20.40",
-    "prismjs": "1.21.0",
+    "prismjs": "1.22.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
