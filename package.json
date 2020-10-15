@@ -34,7 +34,7 @@
     "gatsby-transformer-sharp": "2.5.17",
     "glamor": "2.20.40",
     "prismjs": "1.22.0",
-    "react": "16.13.1",
+    "react": "16.14.0",
     "react-dom": "16.13.1",
     "react-helmet": "6.1.0",
     "react-share": "4.3.1",
