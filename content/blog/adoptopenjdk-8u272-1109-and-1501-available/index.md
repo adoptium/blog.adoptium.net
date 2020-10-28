@@ -21,7 +21,7 @@ AdoptOpenJDK is happy to announce the immediate availability of AdoptOpenJDK 8u2
 
 ### TLS 1.3 Backported to OpenJDK 8
 
-The [OpenJDK project added support for TLS 1.3 to OpenJDK 8](https://bugs.openjdk.java.net/browse/JDK-8245466). TLS 1.3 is automatically enabled and will be negotiated for connections with servers supporting it. Previously, [TLS 1.3 was only available on OpenJDK 11+](https://openjdk.java.net/jeps/332) or required the installation of additional packages such as [OpenJSEE](https://github.com/openjsse/openjsse).
+The [OpenJDK project added support for TLS 1.3 to OpenJDK 8](https://bugs.openjdk.java.net/browse/JDK-8245466). TLS 1.3 is automatically enabled <del>and will be negotiated for connections with servers supporting it</del> (not anymore since [JDK-8245476](https://bugs.openjdk.java.net/browse/JDK-8245476)). Previously, [TLS 1.3 was only available on OpenJDK 11+](https://openjdk.java.net/jeps/332) or required the installation of additional packages such as [OpenJSEE](https://github.com/openjsse/openjsse).
 
 ### CentOS/RHEL 6 Support Restored in AdoptOpenJDK 15
 
@@ -38,3 +38,5 @@ The Shenandoah Garbage Collector was backported to OpenJDK 11 by the OpenJDK pro
 ### AdoptOpenJDK 8u272 for Solaris Not Ready
 
 Due to [JDK-8255003](https://bugs.openjdk.java.net/browse/JDK-8255003), there is no AdoptOpenJDK 8u272 for Solaris yet, because it cannot be built successfully. A patch is currently being reviewed, which should allow us to build and ship AdoptOpenJDK 8u272 for Solaris soon.
+
+*2020-10-28: Incorrect statement about automatic negotiation of TLSv1.3 removed. Thanks, [@TimBoeckstaens](https://twitter.com/TimBoeckstaens/status/1321084958136541185)!*
