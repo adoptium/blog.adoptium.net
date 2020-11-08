@@ -4,7 +4,12 @@ on:
     branches: [ master ]
 jobs:
   linter:
-    runs-on: ubuntu-latest
+    name: "Check on ${{ matrix.os }}"
+    runs-on: ${{ matrix.os }}
+    strategy:
+      matrix:
+        os: [ ubuntu-latest, macos-latest, windows-latest ]
+
     steps:
     - name: Checkout
       uses: actions/checkout@v1
