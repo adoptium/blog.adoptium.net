@@ -35,6 +35,7 @@ jobs:
 
     - name: Build
       run: |
+        gh-actions
         npm install
         npm run build
 
