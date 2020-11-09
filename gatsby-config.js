@@ -7,6 +7,7 @@ module.exports = {
       twitter: "AdoptOpenJDK",
     },
   },
+  pathPrefix: "/template_string", // For staging only (gets replaced with PR number)
   plugins: [
     {
       resolve: "gatsby-source-filesystem",

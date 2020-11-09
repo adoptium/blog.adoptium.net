@@ -37,7 +37,11 @@ jobs:
       run: |
         cd gh-actions
         npm install
-        npm run build
+        # Setup prefix path for PR Number
+        sed -i -e s/template_string/$PR_NUMBER/ gatsby-config.js
+        gatsby build --prefix-paths
+      env:
+        PR_NUMBER: ${{ github.event.pull_request.number }}
 
     - name: Setup git config
       run: |
