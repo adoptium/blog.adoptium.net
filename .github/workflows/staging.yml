@@ -40,6 +40,12 @@ jobs:
         # Setup prefix path for PR Number
         sed -i -e s/template_string/$PR_NUMBER/ gatsby-config.js
         gatsby build --prefix-paths
+        cd public
+        # Prevent search engines crawling the staging
+        cat >"robots.txt" <<-EOF
+        User-agent: *
+        Disallow: /
+        EOF
       env:
         PR_NUMBER: ${{ github.event.pull_request.number }}
 
