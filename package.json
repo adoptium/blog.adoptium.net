@@ -31,7 +31,7 @@
     "gatsby-remark-responsive-iframe": "2.8.0",
     "gatsby-remark-smartypants": "2.8.0",
     "gatsby-source-filesystem": "2.9.0",
-    "gatsby-transformer-sharp": "2.9.0",
+    "gatsby-transformer-sharp": "2.10.0",
     "glamor": "2.20.40",
     "prismjs": "1.23.0",
     "react": "16.14.0",
