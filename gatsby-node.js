@@ -1,7 +1,9 @@
 const path = require("path");
 const fs = require("fs");
-const request = require("request");
+const fetch = require("node-fetch");
 
+const { pipeline } = require("stream");
+const { promisify } = require("util");
 const { createFilePath } = require("gatsby-source-filesystem");
 
 exports.createPages = async ({ graphql, actions }) => {
@@ -11,13 +13,17 @@ exports.createPages = async ({ graphql, actions }) => {
   const authorPage = path.resolve("./src/templates/author-page.js");
 
   for (let author of Object.keys(authorJson)) {
-
-    fs.exists(`content/assets/authors/${author}.jpg`, function(exists) { 
-      if (! exists) {
-        let githubUsername = authorJson[author].github;
-        request(`https://github.com/${githubUsername}.png?size=250`).pipe(fs.createWriteStream(`content/assets/authors/${author}.jpg`));
-      } 
-    }); 
+    try {
+      await fs.promises.access(`content/assets/authors/${author}.jpg`);
+    } catch (error) {
+      const githubUsername = authorJson[author].github;
+      const streamPipeline = promisify(pipeline);
+      const response = await fetch(`https://github.com/${githubUsername}.png?size=250`);
+      if (!response.ok) {
+        throw new Error(`Unexpected response: ${response.statusText}`);
+      }
+      await streamPipeline(response.body, fs.createWriteStream(`content/assets/authors/${author}.jpg`));
+    }
 
     createPage({
       path: `/author/${author}`,
