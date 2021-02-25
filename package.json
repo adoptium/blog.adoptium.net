@@ -21,7 +21,7 @@
     "gatsby-plugin-google-analytics": "2.11.0",
     "gatsby-plugin-manifest": "2.12.1",
     "gatsby-plugin-mdx": "1.10.1",
-    "gatsby-plugin-offline": "3.10.1",
+    "gatsby-plugin-offline": "3.10.2",
     "gatsby-plugin-react-helmet": "3.10.0",
     "gatsby-plugin-sharp": "2.14.2",
     "gatsby-plugin-typography": "2.12.0",
