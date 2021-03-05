@@ -16,7 +16,7 @@ jobs:
 
     - uses: actions/setup-node@v1
       with:
-        node-version: '10'
+        node-version: '14'
         
     - name: Install Gatsby CLI
       run: npm install -g gatsby-cli
