@@ -40,7 +40,7 @@ const SocialBar = () => {
         </div>
         <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
           <a
-            href="https://twitter.com/adoptopenjdk"
+            href="https://twitter.com/adoptium"
             target="_blank"
             rel="noopener noreferrer"
             className="light-link no-underline"
@@ -64,7 +64,7 @@ const SocialBar = () => {
         </div>
         <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
           <a
-            href="https://www.youtube.com/c/AdoptOpenJDK"
+            href="https://www.youtube.com/c/EclipseAdoptium"
             target="_blank"
             rel="noopener noreferrer"
             className="light-link no-underline"
