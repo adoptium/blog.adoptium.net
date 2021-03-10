@@ -9,12 +9,17 @@ body {
 }
 
 .cc-color-override-1434350510.cc-window {
-    background-color:#2d1067 !important
+    background-color:#2d1067 !important;
+    z-index: 9999;
 }
 
 .guestpost {
     padding: 0.5em;
     background-color: #e3e3e3;
+}
+
+.darkmode-toggle {
+    z-index: 9998;
 }
 
 .comments {

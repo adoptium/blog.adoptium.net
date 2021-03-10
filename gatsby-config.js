@@ -24,6 +24,19 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-5WLCZXC",
+        includeInDevelopment: true,
+      }
+    },
+    {
+      resolve: "gatsby-plugin-load-script",
+      options: {
+        src: "//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"
+      }
+    },
+    {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
