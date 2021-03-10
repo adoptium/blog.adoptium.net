@@ -1,10 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "AdoptOpenJDK Blog",
-    description: "Blog of AdoptOpenJDK",
-    siteUrl: "https://blog.adoptopenjdk.net/",
+    title: "Adoptium Blog",
+    description: "Blog of Adoptium",
+    siteUrl: "https://blog.adoptium.net/",
     social: {
-      twitter: "AdoptOpenJDK",
+      twitter: "Adoptium",
     },
   },
   pathPrefix: "/template_string", // For staging only (gets replaced with PR number)
@@ -49,13 +49,13 @@ module.exports = {
     "gatsby-remark-images",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    {
-      resolve: "gatsby-plugin-google-analytics",
-      options: {
-        trackingId: "UA-99905649-2",
-        anonymize: true,
-      },
-    },
+    // {
+    //   resolve: "gatsby-plugin-google-analytics",
+    //   options: {
+    //     trackingId: "UA-99905649-2",
+    //     anonymize: true,
+    //   },
+    // },
     {
       resolve: "gatsby-plugin-feed-mdx",
       options: {

@@ -1,6 +1,6 @@
 {
   "tsc": {
-    "name": "Technical Steering Committee",
+    "name": "AdoptOpenJDK TSC",
     "summary": "The AdoptOpenJDK Technical Steering Committee (TSC) ",
     "twitter": "adoptium",
     "github": "adoptopenjdk"

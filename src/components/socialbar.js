@@ -52,18 +52,6 @@ const SocialBar = () => {
         </div>
         <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
           <a
-            href="https://www.facebook.com/adoptopenjdk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="light-link no-underline"
-          >
-            <span className={`${faLayerStyleHover} fa-layers`}>
-              <FontAwesomeIcon className="fa-social-icon" size="1x" icon={["fab", "facebook"]} style={faSocialIconStyle} />
-            </span>
-          </a>
-        </div>
-        <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
-          <a
             href="https://www.youtube.com/c/EclipseAdoptium"
             target="_blank"
             rel="noopener noreferrer"
@@ -71,18 +59,6 @@ const SocialBar = () => {
           >
             <span className={`${faLayerStyleHover} fa-layers`}>
               <FontAwesomeIcon className="fa-social-icon" size="1x" icon={["fab", "youtube"]} style={faSocialIconStyle}/>
-            </span>
-          </a>
-        </div>
-        <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
-          <a
-            href="https://www.twitch.tv/adoptopenjdk"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="light-link no-underline"
-          >
-            <span className={`${faLayerStyleHover} fa-layers`}>
-              <FontAwesomeIcon className="fa-social-icon" size="1x" icon={["fab", "twitch"]} style={faSocialIconStyle} />
             </span>
           </a>
         </div>

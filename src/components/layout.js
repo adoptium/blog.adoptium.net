@@ -3,10 +3,24 @@ import { library } from "@fortawesome/fontawesome-svg-core";
 import { fas } from "@fortawesome/free-solid-svg-icons";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import Darkmode from "darkmode-js";
+import TagManager from "react-gtm-module";
 
 import { rhythm } from "../utils/typography";
 import NavBar from "./navbar";
+import Footer from "./footer";
 import "./layout.css";
+
+const tagManagerArgs = {
+  gtmId: "GTM-5WLCZXC"
+};
+
+TagManager.initialize(tagManagerArgs);
+
+// Add Eclipse Cookies banner
+const script = document.createElement("script");
+script.src = "//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js";
+script.async = true;
+document.body.appendChild(script);
 
 const options = {
   mixColor: "#fff", // default: '#fff'
@@ -35,12 +49,8 @@ const Layout = ({ children }) => {
         <main>
           {children}
         </main>
-        <footer>
-          © 2017–{new Date().getFullYear()}, Built with
-          {" "}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
       </div>
+      <Footer/>
     </div>
   );
 };
