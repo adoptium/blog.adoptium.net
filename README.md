@@ -1,5 +1,7 @@
 # Adoptium Blog
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/a45c0f64-9ce3-4553-a4ab-8aaefd9d5ce4/deploy-status)](https://app.netlify.com/sites/eclipsefdn-adoptium-blog/deploys)
+
 This is the source of the [Adoptium blog](https://blog.adoptium.net/).
 
 ## Prerequisites
