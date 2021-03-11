@@ -1,6 +1,6 @@
-# AdoptOpenJDK Blog
+# Adoptium Blog
 
-This is the source of the [AdoptOpenJDK blog](https://blog.adoptopenjdk.net/).
+This is the source of the [Adoptium blog](https://blog.adoptium.net/).
 
 ## Prerequisites
 
@@ -81,7 +81,7 @@ This is going to render as:
 
 ```
 <p className="guestpost">
-    <em>Some introductory text – AdoptOpenJDK Team</em>
+    <em>Some introductory text – Adoptium Team</em>
 </p>
 ```
 

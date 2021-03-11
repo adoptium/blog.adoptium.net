@@ -121,7 +121,7 @@ module.exports = {
               }
             `,
             output: "/rss.xml",
-            title: "AdoptOpenJDK Blog",
+            title: "Adoptium Blog",
             match: undefined,
           },
         ],
@@ -130,8 +130,8 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        name: "AdoptOpenJDK Blog",
-        short_name: "AdoptOpenJDK",
+        name: "Adoptium Blog",
+        short_name: "Adoptium",
         start_url: "/",
         background_color: "#ffffff",
         theme_color: "#663399",
