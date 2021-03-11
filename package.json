@@ -22,7 +22,7 @@
     "gatsby-plugin-google-tagmanager": "3.0.0",
     "gatsby-plugin-load-script": "1.1.0",
     "gatsby-plugin-manifest": "2.12.1",
-    "gatsby-plugin-mdx": "2.0.0",
+    "gatsby-plugin-mdx": "2.0.1",
     "gatsby-plugin-offline": "3.10.2",
     "gatsby-plugin-react-helmet": "3.10.0",
     "gatsby-plugin-sharp": "2.14.3",
