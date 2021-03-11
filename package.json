@@ -1,11 +1,11 @@
 {
   "name": "blog",
   "private": true,
-  "description": "Blog of AdoptOpenJDK",
+  "description": "Blog of Adoptium",
   "version": "1.0.0",
-  "author": "AdoptOpenJDK",
+  "author": "Adoptium",
   "bugs": {
-    "url": "https://github.com/adoptopenjdk/blog/issues"
+    "url": "https://github.com/adoptium/blog.adoptium.net/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "1.2.34",
@@ -57,9 +57,10 @@
     "gh-pages": "3.1.0",
     "prettier": "2.2.1"
   },
-  "homepage": "https://blog.adoptopenjdk.net/",
+  "homepage": "https://blog.adoptium.net/",
   "keywords": [
     "AdoptOpenJDK",
+    "Adoptium",
     "OpenJDK",
     "OpenJ9",
     "Java"
@@ -68,7 +69,7 @@
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/adoptopenjdk/blog.git"
+    "url": "git+https://github.com/adoptium/blog.adoptium.net.git"
   },
   "scripts": {
     "build": "gatsby build",
