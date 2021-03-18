@@ -8,29 +8,19 @@ const NavBar = (location) => {
   const rootPath = withPrefix("/");
   let header;
 
-  // let logoStyle = {
-  //   height: "2.5em",
-  //   marginBottom: 0
-  // };
-
-  let textLogoStyle = {
-    color: "#FF1464",
-    fontSize: "1.5em",
-    fontFamily: "sans-serif",
-    fontWeight: 400,
-    marginBottom: "2.5em"
+  let logoStyle = {
+    height: "9em",
+    marginBottom: 0
   };
 
   if (location.pathname === rootPath) {
     header = (
-      // <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix("adopt_logo_white.svg")} style={logoStyle} />
-      <h2 style={textLogoStyle}>Adoptium</h2>
+      <img className="logo" alt="Adoptium logo" src={withPrefix("adoptium_logo.svg")} style={logoStyle} />
     );
   } else {
     header = (
       <Link to={"/"} style={{ boxShadow: "none", color: "inherit", lineHeight: "0px" }}>
-        {/* <img className="logo" alt="AdoptOpenJDK logo" src={withPrefix("adopt_logo_white.svg")} style={logoStyle} /> */}
-        <h2 style={textLogoStyle}>Adoptium</h2>
+        <img className="logo" alt="Adoptium logo" src={withPrefix("adoptium_logo.svg")} style={logoStyle} />
       </Link>
     );
   }
