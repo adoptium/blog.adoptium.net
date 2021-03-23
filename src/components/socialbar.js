@@ -62,6 +62,30 @@ const SocialBar = () => {
             </span>
           </a>
         </div>
+        <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
+          <a
+            href="https://github.com/adoptium"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="light-link no-underline"
+          >
+            <span className={`${faLayerStyleHover} fa-layers`}>
+              <FontAwesomeIcon className="fa-social-icon" size="1x" icon={["fab", "github"]} style={faSocialIconStyle}/>
+            </span>
+          </a>
+        </div>
+        <div className="social-icon align-center inline-block" style={{ margin: "0 0.35rem" }}>
+          <a
+            href="https://adoptium.net/slack.html"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="light-link no-underline"
+          >
+            <span className={`${faLayerStyleHover} fa-layers`}>
+              <FontAwesomeIcon className="fa-social-icon" size="1x" icon={["fab", "slack"]} style={faSocialIconStyle}/>
+            </span>
+          </a>
+        </div>
       </div>
     </>
   );
