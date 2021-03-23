@@ -11,7 +11,7 @@ const Comments = () => {
       }}
       className="comments"
     >
-      <em>Do you have questions or want to discuss this post? Hit us up on the <a href="https://adoptopenjdk.slack.com/">AdoptOpenJDK Slack workspace</a>!</em>
+      <em>Do you have questions or want to discuss this post? Hit us up on the <a href="https://adoptium.slack.com/">Adoptium Slack workspace</a>!</em>
     </p>
   );
 };
