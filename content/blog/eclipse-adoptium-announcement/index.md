@@ -34,7 +34,7 @@ Several of our online locations have also been changed over the last few days:
 In most cases we have been able to leave a forward pointer from the old to the new location, but there may still be places we need to fixup. We'll keep you updated, and let us know if you see places that look like they have been missed.
 
 ### When will Adoptium begin producing binaries?
-The Adoptium working group will be promoting a number of high-quality binaries, including the group's own Temurin binaries which will be produced by the [Eclipse Temurin](https://projects.eclipse.org/projects/adoptium.temurin) project. It will take some time to fully migrate our build farm and code. The current expectation is that the first formal release of Eclipse Temurin binaries will be the July quarterly updates. For more information about the project structure see our recent blog [Transition to Eclipse - An Update](https://blog.adoptium.net/2021/03/transition-to-eclipse-an-update/). Make sure to monitor this blog and [adoptium.net](https://adoptium.net) for more updates!
+The Adoptium working group will be promoting a number of high-quality binaries, including the group's own Temurin binaries which will be produced by the [Eclipse Temurin](https://projects.eclipse.org/projects/adoptium.temurin) project. It will take some time to fully migrate our build farm and code. The current expectation is that the first formal release of Eclipse Temurin binaries will be the July quarterly updates. Make sure to monitor this blog and [adoptium.net](https://adoptium.net) for more updates!
 
 
 (Ed: 2021-04-19 Minor updates to text and links)
