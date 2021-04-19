@@ -9,7 +9,7 @@ const NavBar = (location) => {
   let header;
 
   let logoStyle = {
-    height: "9em",
+    height: "4em",
     marginBottom: 0
   };
 
