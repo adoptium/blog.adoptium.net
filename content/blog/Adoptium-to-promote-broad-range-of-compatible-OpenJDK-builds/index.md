@@ -8,14 +8,6 @@ tags:
   - Eclipse Temurin
 ---
 
-[AdoptOpenJDK](https://adoptopenjdk.net/) has always prided itself on providing free access
-to [OpenJDK](http://openjdk.java.net/) binaries across a
-[large variety of platforms](https://adoptopenjdk.net/supported_platforms.html).
-Over the last four years the AdoptOpenJDK community have defined a robust process
-for producing nightly builds and full release binaries for Hotspot and
-[Eclipse OpenJ9](https://www.eclipse.org/openj9/) JVMs across all Java releases from JDK8
-onwards.
-
 As the AdoptOpenJDK project transitions to Eclipse Adoptium
 [our scope](https://projects.eclipse.org/projects/adoptium/charter) is being clarified. Rather than
 build and distribute different JVM choices directly, Adoptium will build our own binary called
@@ -36,6 +28,4 @@ other distributions by following links to trusted builders that meet our quality
 The Adoptium community will be focusing its own nightly and release binary build and test efforts
 on our own Temurin distribution of OpenJDK,
 which we hope to have ready later this year. We will continue to target the same support timescales,
-breadth of platforms, and the same coverage of Java release levels as AdoptOpenJDK does today. In
-the meantime, release builds can continue to be downloaded via the AdoptOpenJDK
-[website](https://adoptopenjdk.net/) and [API](https://api.adoptopenjdk.net/q/swagger-ui/).
+breadth of platforms, and the same coverage of Java release levels as AdoptOpenJDK does today.
