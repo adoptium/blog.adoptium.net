@@ -3,6 +3,7 @@ title: Eclipse Adoptium Welcomes You
 date: "2021-03-23T12:00:00+00:00"
 author: georgeadams
 description: After months of hard work, the migration process has begun!
+featuredImage: "./adoptium_banner.jpg"
 tags:
   - Adoptium
   - Eclipse Foundation
