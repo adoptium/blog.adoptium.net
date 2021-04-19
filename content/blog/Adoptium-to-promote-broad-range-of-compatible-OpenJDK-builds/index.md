@@ -22,8 +22,9 @@ between the Eclipse Foundation and Oracle, with restrictions as outlined in the 
 of the [Adoptium project charter](https://projects.eclipse.org/projects/adoptium/charter).
 
 Eclipse OpenJ9 based JDK releases will not be directly distributed by the
-Adoptium project as they are at the AdoptOpenJDK project, but they will be available alongside
-other distributions by following links to trusted builders that meet our quality criteria.
+Adoptium project as they currently are at the AdoptOpenJDK project, but they will be
+[available from IBM](https://developer.ibm.com/blogs/ibm-joins-eclipse-adoptium-and-offers-free-certified-jdks-with-eclipse-openj9/)
+alongside other distributions by following links to trusted builders that meet our quality criteria.
 
 The Adoptium community will be focusing its own nightly and release binary build and test efforts
 on our own Temurin distribution of OpenJDK,
