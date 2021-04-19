@@ -29,3 +29,6 @@ The Adoptium community will be focusing its own nightly and release binary build
 on our own Temurin distribution of OpenJDK,
 which we hope to have ready later this year. We will continue to target the same support timescales,
 breadth of platforms, and the same coverage of Java release levels as AdoptOpenJDK does today.
+
+
+`[Ed: 2021-04-19 Minor updates to text`]
