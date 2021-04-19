@@ -1,19 +1,13 @@
 {
-  "tsc": {
-    "name": "AdoptOpenJDK TSC",
-    "summary": "The AdoptOpenJDK Technical Steering Committee (TSC) ",
-    "twitter": "adoptium",
-    "github": "adoptopenjdk"
-  },
   "andreasahlenstorf": {
     "name": "Andreas Ahlenstorf",
-    "summary": "Individual AdoptOpenJDK community contributor",
+    "summary": "Individual Adoptium community contributor",
     "twitter": null,
     "github": "aahlenst"
   },
   "dinakarguniguntala": {
     "name": "Dinakar Guniguntala",
-    "summary": "Co-Maintainer of AdoptOpenJDK docker images. Eclipse OpenJ9 Cloud Optimization",
+    "summary": "Co-Maintainer of docker images. Eclipse OpenJ9 Cloud Optimization",
     "twitter": null,
     "github": "dinogun"
   },
@@ -62,7 +56,7 @@
   },
   "shelleylambert": {
     "name": "Shelley Lambert",
-    "summary": "Software Verification @ AdoptOpenJDK / Eclipse OMR / Eclipse OpenJ9 - IBM Runtime Technologies",
+    "summary": "Software Verification @ Adoptium / Eclipse OMR / Eclipse OpenJ9",
     "twitter": null,
     "github": "smlambert"
   },
