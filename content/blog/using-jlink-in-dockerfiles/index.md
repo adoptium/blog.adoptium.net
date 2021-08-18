@@ -8,9 +8,9 @@ tags:
   - Docker
 ---
 
-The Eclipse Temurin project is excited to announce that the official docker images for Temurin binaries are now available on [Dockerhub](https://hub.docker.com/_/eclipse-temurin).
+The Eclipse Temurin project is excited to announce that the official docker images for Temurin binaries are now available on [Docker Hub](https://hub.docker.com/_/eclipse-temurin).
 
-If you were using a JDK image with Ubuntu Focal or Centos 7 as the base, the migration path is very simple. Simply change `adoptopenjdk` to `eclipse-temurin` and set the distro after the version number in the tag. E.g for Ubuntu Focal:
+If you were previously using an AdoptOpenJDK JDK image with Ubuntu Focal or Centos 7 as the base and wish to continue using the Temurin JDK image on the same base, the migration path is very simple. Simply change `adoptopenjdk` to `eclipse-temurin` and set the distro after the version number in the tag. E.g for Ubuntu Focal and an application called `japp.jar` you might write:
 
 ```dockerfile
 FROM eclipse-temurin:11-focal
@@ -20,7 +20,7 @@ COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
-If you were using a base image that was not Ubuntu Focal or Centos 7 you can use the copy command to bring the JDK into your image. E.g to use a Temurin binary inside a debian base image:
+If you were using a base image that was not Ubuntu Focal or Centos 7 you can use docker's COPY command to bring the JDK into your image. E.g to use a Temurin binary inside a Debian base image:
 
 ```dockerfile
 FROM debian
@@ -35,7 +35,7 @@ CMD ["java", "-jar", "/opt/app/japp.jar"]
 
 ## What about JRE base images?
 
-The Eclipse Temurin project is currently planning on producing JRE images for OpenJDK8, these will be availble soon. For JDK11+ we recommend using `jlink` to produce a custom runtime:
+The Eclipse Temurin project is currently planning on producing JRE images for version 8, these will be [available soon](https://adoptium.net/releases.html?variant=openjdk8&jvmVariant=hotspot). For JDK 11+ it is possible to use `jlink` and produce a custom runtime that works directly with your application:
 
 ```dockerfile
 # Example of custom Java runtime using jlink in a multi-stage container build
@@ -68,4 +68,4 @@ The `--add-modules` command accepts a comma seperated list of modules. To determ
 $ jdk-11.0.8+10-jre/bin/java --list-modules
 ```
 
-We aren't completely ruling out creating JRE's for JDK11+ at this stage, so if a multi-stage dockerfile doesn't work for you then we want to hear your thoughts at https://github.com/adoptium/temurin-build/issues/2683.
+We aren't completely ruling out creating JRE's for JDK11+ at this stage, so if a multi-stage dockerfile doesn't work for you then [we want to hear your thoughts](https://github.com/adoptium/temurin-build/issues/2683).
