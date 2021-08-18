@@ -10,7 +10,7 @@ tags:
 
 The Eclipse Temurin project is excited to announce that the official docker images for Temurin binaries are now available on [Docker Hub](https://hub.docker.com/_/eclipse-temurin).
 
-If you were previously using an AdoptOpenJDK JDK image with Ubuntu Focal or Centos 7 as the base and wish to continue using the Temurin JDK image on the same base, the migration path is very simple. Simply change `adoptopenjdk` to `eclipse-temurin` and set the distro after the version number in the tag. E.g for Ubuntu Focal and an application called `japp.jar` you might write:
+If you were previously using an AdoptOpenJDK JDK image with Ubuntu Focal or CentOS 7 as the base and wish to continue using the Temurin JDK image on the same base, the migration path is very simple. Simply change `adoptopenjdk` to `eclipse-temurin` and set the distro after the version number in the tag. E.g for Ubuntu Focal and an application called `japp.jar` you might write:
 
 ```dockerfile
 FROM eclipse-temurin:11-focal
@@ -20,7 +20,7 @@ COPY japp.jar /opt/app
 CMD ["java", "-jar", "/opt/app/japp.jar"]
 ```
 
-If you were using a base image that was not Ubuntu Focal or Centos 7 you can use docker's COPY command to bring the JDK into your image. E.g to use a Temurin binary inside a Debian base image:
+If you were using a base image that was not Ubuntu Focal or CentOS 7 you can use docker's COPY command to bring the JDK into your image. E.g to use a Temurin binary inside a Debian base image:
 
 ```dockerfile
 FROM debian
