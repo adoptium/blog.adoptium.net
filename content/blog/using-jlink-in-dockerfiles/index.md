@@ -1,6 +1,6 @@
 ---
 title: Using Jlink in Dockerfiles instead of a JRE
-date: "2021-10-18T12:00:00+00:00"
+date: "2021-08-20T12:00:00+00:00"
 author: georgeadams
 description: How to swap a JRE docker image for a jlink runtime
 tags:
