@@ -35,7 +35,7 @@
     "gatsby-source-filesystem": "2.11.1",
     "gatsby-transformer-sharp": "2.12.1",
     "glamor": "2.20.40",
-    "node-fetch": "2.6.2",
+    "node-fetch": "2.6.3",
     "prismjs": "1.25.0",
     "radium": "0.26.1",
     "react": "16.14.0",
