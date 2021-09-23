@@ -21,7 +21,7 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 17. 
 * [JEP 306: Restore Always-Strict Floating-Point Semantics](https://openjdk.java.net/jeps/306).
 * [JEP 356: Enhanced Pseudo-Random Number Generators](https://openjdk.java.net/jeps/356).
 * [JEP 382: New macOS Rendering Pipeline](https://openjdk.java.net/jeps/382).
-* [JEP 391: macOS/AArch64 Port](https://openjdk.java.net/jeps/391) a build from Temurin is going to be available shortly.
+* [JEP 391: macOS/AArch64 Port](https://openjdk.java.net/jeps/391).
 * [JEP 398: Deprecate the Applet API for Removal](https://openjdk.java.net/jeps/398).
 * [JEP 403: Strongly Encapsulate JDK Internals](https://openjdk.java.net/jeps/403).
 * [JEP 406: Pattern Matching for switch (Preview)](https://openjdk.java.net/jeps/406).
