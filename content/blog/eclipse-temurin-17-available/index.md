@@ -3,7 +3,7 @@ title: Eclipse Temurin 17 Available
 date: "2021-09-23T12:00:00+00:00"
 author: georgeadams
 description: Adoptium is excited to announce the immediate availability of Eclipse Temurin 17.
-featuredImage: "./eclipse_temurin_17.png"
+featuredImage: "./eclipse_temurin_17.jpg"
 tags:
   - Adoptium
   - Eclipse Foundation
