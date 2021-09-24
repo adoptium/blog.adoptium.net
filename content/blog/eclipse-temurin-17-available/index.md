@@ -12,6 +12,8 @@ tags:
 
 Adoptium is happy to announce the immediate availability of Eclipse Temurin 17. As always, all binaries are available free of charge without usage restrictions on a wide range of platforms.
 
+![Eclipse_17 Logo](./eclipse_temurin_17.jpg)
+
 * [List of changes in OpenJDK 17](https://bugs.openjdk.java.net/browse/JDK-8263045?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%20%2217%22%20ORDER%20BY%20created%20DESC)
 
 ## New and Noteworthy
