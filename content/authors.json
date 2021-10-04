@@ -77,5 +77,11 @@
     "summary": null,
     "twitter": null,
     "github": "tellison"
+  },
+  "sxa": {
+    "name": "Stewart X Addison",
+    "summary": "Adoptium PMC and steering WG member working for Red Hat",
+    "twitter": "sxaTech",
+    "github": "sxa"
   }
 }
