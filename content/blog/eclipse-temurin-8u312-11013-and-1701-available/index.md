@@ -28,3 +28,7 @@ openjdk 11.0.13 2021-10-19
 OpenJDK Runtime Environment Temurin-11.0.13+8 (build 11.0.13+8)
 OpenJDK 64-Bit Server VM Temurin-11.0.13+8 (build 11.0.13+8, mixed mode)
 ```
+
+### New artifacts in the releases
+
+We now publish source and static versions of the Temurin libraries (JDK11+) as well as source code archives. Source code archives can be downloaded via the Website or the API.
