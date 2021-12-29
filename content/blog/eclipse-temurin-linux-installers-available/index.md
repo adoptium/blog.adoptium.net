@@ -68,9 +68,9 @@ cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2
     yum install temurin-17-jdk
     ```
 
-## openSUSE/Sles Instructions
+## openSUSE/SLES Instructions
 
-1. Import the RPM repo making sure to change the openSUSE version if you are not using OpenSUSE 15.2. RPM’s are also available for Sles 12 and 15. To check the full list of versions supported take a look at https://packages.adoptium.net/ui/repos/tree/General/rpm.
+1. Import the RPM repo making sure to change the openSUSE version if you are not using OpenSUSE 15.2. RPM’s are also available for SLES 12 and 15. To check the full list of versions supported take a look at https://packages.adoptium.net/ui/repos/tree/General/rpm.
     ```bash
     zypper ar -f https://packages.adoptium.net/artifactory/rpm/opensuse/15.2/$(uname -m) adoptium
     ```
