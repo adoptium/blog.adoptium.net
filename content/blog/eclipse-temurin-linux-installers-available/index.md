@@ -49,9 +49,9 @@ cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2
     apt-get install temurin-17-jdk
     ```
 
-## Centos/Rhel/Fedora Instructions
+## Centos/RHEL/Fedora Instructions
 
-1. Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to change the Centos version if you are not using Centos 8. RPM’s are also available for Rhel and Fedora. To check the full list of versions supported take a look at https://packages.adoptium.net/ui/repos/tree/General/rpm.
+1. Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to change the Centos version if you are not using Centos 8. RPM’s are also available for RHEL and Fedora. To check the full list of versions supported take a look at https://packages.adoptium.net/ui/repos/tree/General/rpm.
     ```bash
     cat <<EOF > /etc/yum.repos.d/adoptium.repo
     [Adoptium]
