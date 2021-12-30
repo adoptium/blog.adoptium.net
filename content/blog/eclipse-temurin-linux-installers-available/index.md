@@ -19,29 +19,17 @@ e.g temurin-17-jdk or temurin-8-jdk
 
 ## Deb installation on Debian or Ubuntu
 
-You need the codename of your Debian or Ubuntu version. It is usually recorded in `/etc/os-release` and can be extracted on Debian by running:
-
-```bash
-cat /etc/os-release | grep VERSION_CODENAME | cut -d = -f 2
-```
-
-and on Ubuntu by running:
-
-```bash
-cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2
-```
-
 1. Ensure the necessary packages are present:
     ```bash
-    sudo apt-get install -y wget apt-transport-https gnupg
+    apt-get install -y wget apt-transport-https gnupg
     ```
 1. Download the Eclipse Adoptium GPG key:
     ```bash
-    wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | sudo apt-key add -
+    wget -O - https://packages.adoptium.net/artifactory/api/gpg/key/public | apt-key add -
     ```
 1. Configure the Eclipse Adoptium apt repository by replacing the values in angle brackets:
     ```bash
-    echo "deb https://packages.adoptium.net/artifactory/deb <codename> main" | sudo tee /etc/apt/sources.list.d/adoptium.list
+    echo "deb https://packages.adoptium.net/artifactory/deb $(awk -F= '/^VERSION_CODENAME/{print$2}' /etc/os-release) main" | tee /etc/apt/sources.list.d/adoptium.list
     ```
 1. Install the Temurin version you require:
     ```bash
@@ -49,9 +37,9 @@ cat /etc/os-release | grep UBUNTU_CODENAME | cut -d = -f 2
     apt-get install temurin-17-jdk
     ```
 
-## Centos/RHEL/Fedora Instructions
+## CentOS/RHEL/Fedora Instructions
 
-1. Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to change the Centos version if you are not using Centos 8. RPM’s are also available for RHEL and Fedora. To check the full list of versions supported take a look at https://packages.adoptium.net/ui/repos/tree/General/rpm.
+1. Add the RPM repo to `/etc/yum.repos.d/adoptium.repo` making sure to change the CentOS version if you are not using CentOS 8, and if you are on a 32-bit ARM system, replace `$(uname -m)` with `armv7hl`. RPMs are also available for RHEL and Fedora. To check the full list of versions supported take a look at the list in the tree at https://packages.adoptium.net/ui/repos/tree/General after clicking the "Artifacts" link on the left
     ```bash
     cat <<EOF > /etc/yum.repos.d/adoptium.repo
     [Adoptium]
