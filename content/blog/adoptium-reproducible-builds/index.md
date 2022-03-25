@@ -67,8 +67,8 @@ integrate changes into the build scripts to fully support Reproducible Builds.
 
 The following capabilities are available at Eclipse Adoptium:
 
-- Reproducible jdk-19 builds for x64 Linux and aarch64 Linux platforms across all infrastructure
-- Reproducible jdk-19 builds for ppc64 Linux, arm32 Linux, s390x Linux built on the same infrastructure
+- Reproducible jdk-19 builds for x64 Linux and aarch64 Linux platforms across all infrastructure.
+- Reproducible jdk-19 builds for ppc64 Linux, arm32 Linux, s390x Linux built on the same infrastructure.
 
 The following are projects currently in-progress:
 
