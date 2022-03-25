@@ -63,11 +63,22 @@ jdk17u stream, since jdk-17 is a LTS release.
 ### Ongoing Eclipse Adoptium Reproducible Build projects
 
 As well as continuing to identify and fix any OpenJDK non-deterministic issues, Eclipse Adoptium is continuing to
-integrate changes into the build scripts to fully support Reproducible Builds. These include:
+integrate changes into the build scripts to fully support Reproducible Builds.
 
-- Adding new features and options to the Adoptium build pipelines to support reproducible builds, including integrating
-any new OpenJDK required options required for deterministic builds.
-- Integrating CycloneDX SBOM tooling to provide a standardized bill of materials framework for the Adoptium binaries.
+The following capabilities are available at Eclipse Adoptium:
+
+- Reproducible jdk-19 builds for x64 Linux and aarch64 Linux platforms across all infrastructure
+- Reproducible jdk-19 builds for ppc64 Linux, arm32 Linux, s390x Linux built on the same infrastructure
+
+The following are projects currently in-progress:
+
+- Further non-deterministic issue resolutions, and subsequent contribution to upstream OpenJDK, and backporting to jdk17u.
+- Enhancing the Adoptium jenkins pipelines to integrate CycloneDX SBOM tooling to provide a standardized bill of materials framework for the Adoptium binaries.
+- Detailed dependency bill of materials analysis to fully extended the CycloneDX SBOM json.
+
+Future projects:
+
+- Extending reproducible build support to the jdk17u build pipelines.
 - Further exploring required fixes to non-deterministic build output on other platforms, eg.MacOS and Windows.
-- Further tooling and reporting that leverages reproducible builds to help validate secure JDK binary output.
+- Further tooling and reporting that leverages reproducible builds to help validate secure JDK binary output, eg.comparison pipeline tooling.
 
