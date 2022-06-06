@@ -41,6 +41,13 @@ to re-build with a specific patch can be sure to be rebuilt with the exact same 
 that one patch added. Also any support queries on known bugs or issues in any component or build tool can be
 cross checked with the SBOM for any given release.
 
+### Best practices for a Secure Software Development Framework (SSDF)
+
+The Secure Software Development Framework [SSDF](https://csrc.nist.gov/Projects/ssdf) identifies a standard for
+best practices for organizations to prepare, protect, and secure their software delivery processes. The
+advantages provided by "Reproducible Builds" and "Software Bill of Materials" are placed in many of the
+best practices identified within this standard.
+
 ### Improved Adoptium Build Script Validation
 
 One aspect of a continually changing and improving open source community is ensuring any changes are good with
