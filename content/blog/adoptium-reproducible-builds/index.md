@@ -54,7 +54,7 @@ has not had any un-forseen effect.
 ### OpenJDK upstream contributions
 
 The OpenJDK upstream community is fully supportive of reproducible builds, and over the past year many contributors
-their have been finding and resolving non-deterministic issues. At Eclipse Adoptium extensive work has been done to
+have been finding and resolving non-deterministic issues. At Eclipse Adoptium extensive work has been done to
 achieve identical OpenJDK binaries on the Linux platforms in the jdk "head" stream (jdk-19+). This has involved
 in-depth build comparison debugging to identify non-deterministic build issues, and any OpenJDK issues are then
 contributed back upstream to the OpenJDK community project. These fixes have also been backported to the
