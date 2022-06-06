@@ -83,18 +83,18 @@ integrate changes into the build scripts to fully support Reproducible Builds.
 
 The following capabilities are available at Eclipse Adoptium:
 
-- Reproducible jdk-19 builds for x64 Linux and aarch64 Linux platforms across all infrastructure.
-- Reproducible jdk-19 builds for ppc64 Linux, arm32 Linux, s390x Linux built on the same infrastructure.
+- Reproducible jdk-19 builds for Linux architectures x64, aarch64, ppc64, arm32, and s390x.
 
 The following are projects currently in-progress:
 
+- Reproducible jdk-19 builds for MacOS x64 and MacOS aarch64.
 - Further non-deterministic issue resolutions, and subsequent contribution to upstream OpenJDK, and backporting to jdk17u.
 - Enhancing the Adoptium jenkins pipelines to integrate CycloneDX SBOM tooling to provide a standardized bill of materials framework for the Adoptium binaries.
 - Detailed dependency bill of materials analysis to fully extended the CycloneDX SBOM json.
 
 Future projects:
 
-- Extending reproducible build support to the jdk17u build pipelines.
-- Further exploring required fixes to non-deterministic build output on other platforms, eg.MacOS and Windows.
+- Extending Temurin reproducible build script support to the jdk17u build pipelines.
+- Further exploring required fixes to non-deterministic build output on other platforms, eg.Windows.
 - Further tooling and reporting that leverages reproducible builds to help validate secure JDK binary output, eg.comparison pipeline tooling.
 
