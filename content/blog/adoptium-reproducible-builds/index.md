@@ -61,20 +61,20 @@ contributed back upstream to the OpenJDK community project. These fixes have als
 jdk17u stream, since jdk-17 is a LTS release.
 
 OpenJDK contributions:
-[8284539: Configure --with-source-date=version fails on MacOS](https://github.com/openjdk/jdk/pull/8247)
-[8284661: Reproducible assembly builds without relative linking](https://github.com/openjdk/jdk/pull/8177)
-[8284437: Building from different users/workspace is not always deterministic ](https://github.com/openjdk/jdk/pull/8124)
-[8283315: jrt-fs.jar not always deterministically built](https://github.com/openjdk/jdk/pull/7852)
-[8279834: Alpine Linux fails to build when --with-source-date enabled](https://github.com/openjdk/jdk/pull/7025)
-[8279182: MakeZipReproducible ZipEntry timestamps not localized to UTC](https://github.com/openjdk/jdk/pull/6926)
-[8278766: Enable OpenJDK build support for reproducible jars and jmods using --date](https://github.com/openjdk/jdk/pull/6878)
-[8278163: --with-cacerts-src variable resolved after GenerateCacerts recipe setup](https://github.com/openjdk/jdk/pull/6680)
-[8278080: Add --with-cacerts-src='user cacerts folder' to enable deterministic cacerts generation](https://github.com/openjdk/jdk/pull/6647)
-[8277762: Allow configuration of HOTSPOT_BUILD_USER](https://github.com/openjdk/jdk/pull/6542)
-[8276766: Enable jar and jmod to produce deterministic timestamped content](https://github.com/openjdk/jdk/pull/6481)
-[8276764: Enable deterministic file content ordering for Jar and Jmod](https://github.com/openjdk/jdk/pull/6395)
-[8276743: Make openjdk build Zip Archive generation "reproducible"](https://github.com/openjdk/jdk/pull/6311)
-[8276654: element-list order is non deterministic](https://github.com/openjdk/jdk/pull/6278)
+- [8284539: Configure --with-source-date=version fails on MacOS](https://github.com/openjdk/jdk/pull/8247)
+- [8284661: Reproducible assembly builds without relative linking](https://github.com/openjdk/jdk/pull/8177)
+- [8284437: Building from different users/workspace is not always deterministic ](https://github.com/openjdk/jdk/pull/8124)
+- [8283315: jrt-fs.jar not always deterministically built](https://github.com/openjdk/jdk/pull/7852)
+- [8279834: Alpine Linux fails to build when --with-source-date enabled](https://github.com/openjdk/jdk/pull/7025)
+- [8279182: MakeZipReproducible ZipEntry timestamps not localized to UTC](https://github.com/openjdk/jdk/pull/6926)
+- [8278766: Enable OpenJDK build support for reproducible jars and jmods using --date](https://github.com/openjdk/jdk/pull/6878)
+- [8278163: --with-cacerts-src variable resolved after GenerateCacerts recipe setup](https://github.com/openjdk/jdk/pull/6680)
+- [8278080: Add --with-cacerts-src='user cacerts folder' to enable deterministic cacerts generation](https://github.com/openjdk/jdk/pull/6647)
+- [8277762: Allow configuration of HOTSPOT_BUILD_USER](https://github.com/openjdk/jdk/pull/6542)
+- [8276766: Enable jar and jmod to produce deterministic timestamped content](https://github.com/openjdk/jdk/pull/6481)
+- [8276764: Enable deterministic file content ordering for Jar and Jmod](https://github.com/openjdk/jdk/pull/6395)
+- [8276743: Make openjdk build Zip Archive generation "reproducible"](https://github.com/openjdk/jdk/pull/6311)
+- [8276654: element-list order is non deterministic](https://github.com/openjdk/jdk/pull/6278)
 
 ### Ongoing Eclipse Adoptium Reproducible Build projects
 
