@@ -39,7 +39,7 @@ Reproducibility necessitates a Software Bill of Materials (SBOM), from the secur
 to the versions and SHAs of dependent components and the tooling used to build it. This means any requirement
 to re-build with a specific patch can be sure to be rebuilt with the exact same source and tooling, with just
 that one patch added. Also any support queries on known bugs or issues in any component or build tool can be
-cross checked with the SBOM for any given release.
+cross checked with the SBOM for any given release to determine if they are affected.
 
 ### Best practices for a Secure Software Development Framework (SSDF)
 
