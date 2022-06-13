@@ -2,7 +2,7 @@
 title: Reproducible Builds at Eclipse Adoptium
 date: "2022-03-31T12:00:00+00:00"
 author: anleonar@redhat.com
-description: Eclipse Adoptium is working towards fully reproducible builds, this blogs explains why
+description: Eclipse Adoptium is working towards fully reproducible builds, this blog explains why
  they are needed and the work ongoing to achieve them.
 tags:
   - Temurin
