@@ -102,6 +102,6 @@ The following are projects currently in-progress:
 Future projects:
 
 - Extending Temurin reproducible build script support to the jdk17u build pipelines.
-- Further exploring required fixes to non-deterministic build output on other platforms, eg.Windows.
+- Further exploring required fixes to non-deterministic build output on other platforms, e.g.Windows.
 - Further tooling and reporting that leverages reproducible builds to help validate secure JDK binary output, eg.comparison pipeline tooling.
 
