@@ -83,5 +83,11 @@
     "summary": "Adoptium PMC and steering WG member working for Red Hat",
     "twitter": "sxaTech",
     "github": "sxa"
+  },
+  "andrewleonard": {
+    "name": "Andrew Leonard",
+    "summary": "Adoptium Build team member working for Red Hat",
+    "twitter": null,
+    "github": "andrew-m-leonard"
   }
 }
