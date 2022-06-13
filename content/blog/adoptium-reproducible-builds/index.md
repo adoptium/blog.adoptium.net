@@ -54,7 +54,7 @@ One aspect of a continually changing and improving open source community is ensu
 no side effects. For example ensuring changes to build scripts don't alter the JDK binary when they should not.
 A guaranteed way of assuring that such changes do not, is to leverage reproducible builds. Simply comparing the
 JDK binary output from before and after a build script change, and checking they are identical, proves the change
-has not had any un-forseen effect.
+has not had any unforeseen effect.
 
 ## The progress at Eclipse Adoptium to achieve Reproducible Builds
 
