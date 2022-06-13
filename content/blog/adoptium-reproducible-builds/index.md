@@ -86,7 +86,7 @@ OpenJDK contributions:
 ### Ongoing Eclipse Adoptium Reproducible Build projects
 
 As well as continuing to identify and fix any OpenJDK non-deterministic issues, Eclipse Adoptium is continuing to
-integrate changes into the build scripts to fully support Reproducible Builds.
+integrate changes into the build scripts to fully support reproducible builds.
 
 The following capabilities are available at Eclipse Adoptium:
 
