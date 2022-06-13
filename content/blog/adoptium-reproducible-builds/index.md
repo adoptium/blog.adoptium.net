@@ -35,7 +35,7 @@ the Adoptium community public binaries.
 
 ### Better consumer support capabilities for releases
 
-Reproducibility necessitates a Software Bill of Materials (SBOM), from the SHAs of all the component parts,
+Reproducibility necessitates a Software Bill of Materials (SBOM), from the secure hashes (SHAs) of all the component parts,
 to the versions and SHAs of dependent components and the tooling used to build it. This means any requirement
 to re-build with a specific patch can be sure to be rebuilt with the exact same source and tooling, with just
 that one patch added. Also any support queries on known bugs or issues in any component or build tool can be
