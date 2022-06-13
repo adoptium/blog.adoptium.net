@@ -90,7 +90,7 @@ integrate changes into the build scripts to fully support Reproducible Builds.
 
 The following capabilities are available at Eclipse Adoptium:
 
-- Reproducible jdk-19 builds for Linux architectures x64, aarch64, ppc64, arm32, and s390x.
+- Reproducible jdk-19 builds for all Temurin Linux architectures
 
 The following are projects currently in-progress:
 
