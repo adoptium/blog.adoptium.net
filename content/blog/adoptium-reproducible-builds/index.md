@@ -65,7 +65,7 @@ have been finding and resolving non-deterministic issues. At Eclipse Adoptium ex
 achieve identical OpenJDK binaries on the Linux platforms in the jdk "head" stream (jdk-19+). This has involved
 in-depth build comparison debugging to identify non-deterministic build issues, and any OpenJDK issues are then
 contributed back upstream to the OpenJDK community project. These fixes have also been backported to the
-jdk17u stream, since jdk-17 is a LTS release.
+jdk17u stream, since jdk-17 is a long term supported release.
 
 OpenJDK contributions:
 - [8284539: Configure --with-source-date=version fails on MacOS](https://github.com/openjdk/jdk/pull/8247)
