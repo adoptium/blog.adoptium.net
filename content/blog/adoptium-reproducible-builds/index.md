@@ -17,7 +17,7 @@ identical JDK binaries, shows confidence and quality in the production process.
 The necessity to know exactly what is going into the binary and the exact repeatability of the
 build process, through what source and dependencies are used, to what compiler tooling is used.
 The fact that a reproducible identical JDK binary can only be achieved by all these stringent controls,
-shows the high quality of the JDK binaries to the consumers.
+shows the high quality of the processes used to bring the JDK binaries to the consumers.
 
 ### Secure Supply Chain
 
