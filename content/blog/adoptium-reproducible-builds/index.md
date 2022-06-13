@@ -10,7 +10,7 @@ tags:
 
 ## Why do we need Reproducible Builds?
 
-### Confidence in the high quality of binaries
+### Confidence in the high quality of the process to create the binaries
 
 Being able to repeatably build the same OpenJDK source in an identical manner, producing
 identical JDK binaries, shows confidence and quality in the production process.
