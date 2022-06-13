@@ -27,7 +27,7 @@ of everying within and used to build the JDK. Thus any publicly published CVEs o
 quickly cross-checked with the JDK and build tooling used.
 
 The other aspect of a secure supply chain is being able to absolutely identify a JDK binary as being secure,
-this is especially true for Open Source community projects. The ability to repeatably build a JDK binary
+this is especially true for Open Source community projects. The ability to repeatedly recreate a JDK binary
 identically from the Adoptium build scripts provides a mechanism to achieve this. The Adoptium releases can
 be re-built within multiple secure environments each with stringent bill of material checks, and then the binaries
 compared to ensure byte for byte identical output. This then gives the utmost secure supply chain confidence in
