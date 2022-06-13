@@ -24,7 +24,7 @@ shows the high quality of the JDK binaries to the consumers.
 The reproduciblity of builds goes hand in hand with knowing exactly what goes into it, in other words 
 the Software Bill of Materials (SBOM). This detailed knowledge means we know the source and provenance
 of everying within and used to build the JDK. Thus any publicly published CVEs or vulnerabilities can be
-quickly cross checked with the JDK and build tooling used.
+quickly cross-checked with the JDK and build tooling used.
 
 The other aspect of a secure supply chain is being able to absolutely identify a JDK binary as being secure,
 this is especially true for Open Source community projects. The ability to repeatably build a JDK binary
