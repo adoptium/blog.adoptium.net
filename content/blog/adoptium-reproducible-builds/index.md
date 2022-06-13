@@ -94,7 +94,7 @@ The following capabilities are available at Eclipse Adoptium:
 
 The following are projects currently in-progress:
 
-- Reproducible jdk-19 builds for MacOS x64 and MacOS aarch64.
+- Reproducible jdk-19 builds for MacOS.
 - Further non-deterministic issue resolutions, and subsequent contribution to upstream OpenJDK, and backporting to jdk17u.
 - Enhancing the Adoptium jenkins pipelines to integrate CycloneDX SBOM tooling to provide a standardized bill of materials framework for the Adoptium binaries.
 - Detailed dependency bill of materials analysis to fully extended the CycloneDX SBOM json.
