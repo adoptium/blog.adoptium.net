@@ -110,7 +110,7 @@ Future projects:
 
 Todays Enterprise Software needs to be more secure and safe from vulnerability attacks than ever before. Providing methods
 for ensuring the security of the supply chain and ways of demonstrating the quality of the products delivered are essential.
-The Eclipsem Adoptium reproducible build and SBOM integration is providing these essemtial features for the community.
+The Eclipse Adoptium reproducible build and SBOM integration is providing these essemtial features for the community.
 
 If your company is working on reproducible builds, or other methods for securing your supply chains, how are you approaching this problem?
 How would your organization leverage Eclipse Adoptium reproducible builds?
