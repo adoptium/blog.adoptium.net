@@ -108,7 +108,7 @@ Future projects:
 
 ### Summary
 
-Todays Enterprise Software needs to be more secure and safe from vulnerability attacks than ever before. Providing methods
+Today's Enterprise Software needs to be more secure and safe from vulnerability attacks than ever before. Providing methods
 for ensuring the security of the supply chain and ways of demonstrating the quality of the products delivered are essential.
 The Eclipse Adoptium reproducible build and SBOM integration is providing these essemtial features for the community.
 
