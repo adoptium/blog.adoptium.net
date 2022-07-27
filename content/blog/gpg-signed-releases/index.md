@@ -16,14 +16,14 @@ do to verify the downloads.
 
 ## What is GPG signing?
 
-## You've already been providing SHA256 checksums. Why do I need this?
+## You are already providing SHA256 checksums. Why do I need this?
 
 While going into the details of public key encryption is beyond the scope of
 this article, if there was a man in the middle (MITM) attach that resulted
 in the downloads you receive being compromised, then the corresponding SHA
 checksums could also be compromised.  GPG signing avoids this issue by using
-a separate signing signature which you can initially trust and then verify
-subsequent download.
+a separately certified signature which you can initially trust and then verify
+subsequent downloads.
 
 ## What do I need to do to obtain the signatures?
 
@@ -31,32 +31,47 @@ The link to the signatures is provided in the metadata for our releases.  In
 the following examples I will use JDK17 but you can change the calls
 appropriately for other versions:
 
-TODO: Currently this can be obtained by downloading the json as follows:
-`curl 'https://api.adoptium.net/v3/assets/feature_releases/8/ea?page=0&page_size=1' > adopt.json`
+The data file that contains the URL of the signatures can be obtained by
+downloading the json as follows:
+
+`curl 'https://api.adoptium.net/v3/assets/feature_releases/17/ea?page=0&page_size=1' > adopt.json`
 
 Once you've downloaded that you need to extract the `link` and
-`signature_link` entries using your preferred JSON parsing tool.  For this
-I will give an example using the `jq` command line JSON parsing tool to pull
-out the information for Linux/x64 and download the required artifacts using
-the `curl` command (Examples for linux/x64, change accordingly for other
-platforms)
+`signature_link` entries using your preferred JSON parsing tool.  The
+information you want is in the `binaries[0].package.link` and
+`binaries[0].package.signature_link` section of the file for the most recent
+version.
+
+For automation purposes, I will give an example using the
+[jq](https://stedolan.github.io/jq/) command line JSON parsing tool to pull
+out the information for Linux/x64 and download the required artifacts - the
+product download and the GPG signature link - using the `curl` command
+(Examples for linux/x64, change accordingly for other platforms)
+
 ```
 jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.link' adopt.json | xargs curl -LO
-jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.link' adopt.json | xargs curl -LO
+jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.signature_link' adopt.json | xargs curl -LO
+```
 
-Note that as mentioned in the previous section, we have previously also provided the sha256sums which can be obtained from the JSON file with
+Note that as mentioned in the previous section, we have previously also
+provided the sha256sums which can be obtained from the JSON file with
+
 ```
 jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.checksum' adopt.json
 ```
-These can be verified against the output from running the `sha256sum` command against
-the binary artifact but do not give the same confidence as the GPG signatures.
+
+If you have not used them before, The SHA checksums can be verified against
+the output from running the `sha256sum` command against the binary artifact.
+The SHA checksum verifies that the downloads have occurred without errors,
+but the GPG checksums additionally verify the source of the binaries is from
+the Adoptium project
 
 ## How do I verify the signatures once I have them?
 
 You will need to have the `gpg` tool installed in order to verify the
 signatures.  You can then run the following command to check the signature by supplying the signature file and the corresponding file which the signature is for e.g.:
 
-`gpg --verify OpenJDK8U-jdk_x64_linux_hotspot_2022-07-05-03-24.tar.gz.sig OpenJDK8U-jdk_x64_linux_hotspot_2022-07-05-03-24.tar.gz`
+`gpg --verify OpenJDK17U-jdk_x64_linux_hotspot_17.0.4_8.tar.gz.sig OpenJDK17U-jdk_x64_linux_hotspot_17.0.4_8.tar.gz`
 
 If you do not currently have the public signing key you will get a message such as this:
 
@@ -69,9 +84,8 @@ gpg: Can't check signature: No public key
 ```
 
 To resolve this message you need to acquire the public key that was used to
-sign the binaries.  You can either obtain this from Eclipse, or download it
-from a trusted GPG server, for example to use the Ubuntu key servers run
-this command:
+sign the binaries.  You can download it from a trusted GPG server, for
+example to use the Ubuntu key servers run this command:
 
 `gpg --keyserver keyserver.ubuntu.com --recv-keys 3B04D753C9050D9A5D343F39843C48A565F8F04B`
 
