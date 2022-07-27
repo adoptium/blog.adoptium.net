@@ -26,5 +26,5 @@ Due to some recent changes in the Harfbuzz library version used to build OpenJDK
 
 Further discussion on this issue and the changes required can be found at the links below:
 
-- https://bugs.openjdk.java.net/browse/JDK-8282588
-- https://mail.openjdk.java.net/pipermail/ppc-aix-port-dev/2022-March/004145.html
+* https://bugs.openjdk.java.net/browse/JDK-8282588
+* https://mail.openjdk.java.net/pipermail/ppc-aix-port-dev/2022-March/004145.html
