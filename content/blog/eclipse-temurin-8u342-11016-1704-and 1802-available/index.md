@@ -20,6 +20,10 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u34
 
 ## New and Noteworthy
 
+### Eclipse Temurin 8 for Windows x64 respin
+
+The original 8u342 Windows x64 release introduced a regression requiring the Visual Studio 2017 runtime to be installed on a users system. This was due to a compiler upgrade for this set of releases. As a result a second Windows x64 build has been released for JDK8u (`jdk8u342-b07.1`) which reverts the compiler to Visual Studio 2013 until the issue has been resolved.
+
 ### Eclipse Temurin 11 for AIX requires XLC 16.1 runtime
 
 Due to some recent changes in the Harfbuzz library version used to build OpenJDK 11, XLC 16.1 is now required instead of XLC 13.1. Users will therefore be required to install the XLC 16.1 runtime on their system if they don't already have it. This change only affect Eclipse Temurin 11.
