@@ -98,7 +98,7 @@ with a trusted signature!  gpg: There is no indication that the signature
 belongs to the owner.
 ```
 While the "Good signature" message gives you some
-confidence that the download is valud, to fully trust the certificate and
+confidence that the download is valid, to fully trust the certificate and
 remove the final warning you can run the following then follow the prompts
 to grant ultimate trust to it:
 
