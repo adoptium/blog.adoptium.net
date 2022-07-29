@@ -16,14 +16,23 @@ do to verify the downloads.
 
 ## What is GPG signing?
 
-## You are already providing SHA256 checksums. Why do I need this?
+In the use case we are talking about here, GPG signing is a cryptographic
+process whereby a private/public keypair is used to confirm that a file has
+not been tampered with between when it was published and it being delivered
+to the end user.  The private key is used by Adoptium to produce the
+signature file which can be downloaded along with the OpenJDK binaries, and
+the public key can be obtained by you and used to verify the the signature
+is valid, proving the integrity of the file and also that it was signed by
+Adoptium and not modified by a third party.
+
+## The download site already provides SHA256 checksums. Why would I need this?
 
 While going into the details of public key encryption is beyond the scope of
-this article, if there was a man in the middle (MITM) attach that resulted
-in the downloads you receive being compromised, then the corresponding SHA
+this article, if there was a man in the middle attack that resulted in the
+downloads you receive being compromised, then the corresponding SHA
 checksums could also be compromised.  GPG signing avoids this issue by using
-a separately certified signature which you can initially trust and then verify
-subsequent downloads.
+a separately certified signature which you can initially trust and then
+verify subsequent downloads.
 
 ## What do I need to do to obtain the signatures?
 
@@ -31,10 +40,10 @@ The link to the signatures is provided in the metadata for our releases.  In
 the following examples I will use JDK17 but you can change the calls
 appropriately for other versions:
 
-The data file that contains the URL of the signatures can be obtained by
-downloading the json as follows:
+The metadata that contains the URL of the signature file can be obtained by
+as follows:
 
-`curl 'https://api.adoptium.net/v3/assets/feature_releases/17/ea?page=0&page_size=1' > adopt.json`
+`curl 'https://api.adoptium.net/v3/assets/feature_releases/17/ga' > adopt.json`
 
 Once you've downloaded that you need to extract the `link` and
 `signature_link` entries using your preferred JSON parsing tool.  The
@@ -42,29 +51,33 @@ information you want is in the `binaries[0].package.link` and
 `binaries[0].package.signature_link` section of the file for the most recent
 version.
 
-For automation purposes, I will give an example using the
-[jq](https://stedolan.github.io/jq/) command line JSON parsing tool to pull
-out the information for Linux/x64 and download the required artifacts - the
-product download and the GPG signature link - using the `curl` command
-(Examples for linux/x64, change accordingly for other platforms)
+The following example uses thenFor automation purposes, I will give an
+example using the [jq](https://stedolan.github.io/jq/) command line JSON
+parsing tool to pull out the information for Linux/x64 and download the
+product and the GPG signature using the `curl` command (change accordingly
+for other platforms)
 
 ```
 jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.link' adopt.json | xargs curl -LO
 jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.signature_link' adopt.json | xargs curl -LO
 ```
 
-Note that as mentioned in the previous section, we have previously also
-provided the sha256sums which can be obtained from the JSON file with
+Note that as mentioned in the previous section, we also provide the
+sha256sums which can be obtained from the JSON file with
 
 ```
 jq '.[0].binaries[] | select(.architecture=="x64") | select (.os=="linux") | select (.image_type=="jdk") .package.checksum' adopt.json
 ```
 
-If you have not used them before, The SHA checksums can be verified against
-the output from running the `sha256sum` command against the binary artifact.
-The SHA checksum verifies that the downloads have occurred without errors,
-but the GPG checksums additionally verify the source of the binaries is from
-the Adoptium project
+The SHA checksums can be verified against the output from running one of the
+following commands depending on your operating system:
+- Windows: `certUtil -hashfile file SHA256`
+- MacOS: `shasum -a 256 file`
+- UNIX/Linux: `sha256sum file`
+
+The SHA checksum allows you to verift that the download has occurred without
+errors, and the GPG checksum additionally verifies the binaries are those
+released by the Adoptium project.
 
 ## How do I verify the signatures once I have them?
 
@@ -73,7 +86,7 @@ signatures.  You can then run the following command to check the signature by su
 
 `gpg --verify OpenJDK17U-jdk_x64_linux_hotspot_17.0.4_8.tar.gz.sig OpenJDK17U-jdk_x64_linux_hotspot_17.0.4_8.tar.gz`
 
-If you do not currently have the public signing key you will get a message such as this:
+If you do not currently have the Adoptium project's public signing key you will get a message such as this:
 
 ```
 gpg: directory '/home/sxa/.gnupg' created
