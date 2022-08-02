@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 8u342, 11.0.16, 17.0.4 and 18.0.2 Available
-date: "2022-07-26T12:00:00+00:00"
+date: "2022-08-02T12:00:00+00:00"
 author: georgeadams
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u342, 11.0.16, 17.0.4 and 18.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
