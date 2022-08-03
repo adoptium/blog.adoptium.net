@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 8u342, 11.0.16, 17.0.4 and 18.0.2 Available
-date: "2022-08-02T12:00:00+00:00"
+date: "2022-08-03T12:00:00+00:00"
 author: georgeadams
 description: Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u342, 11.0.16, 17.0.4 and 18.0.2. As always, all binaries are thoroughly tested and available free of charge without usage restrictions on a wide range of platforms.
 tags:
@@ -19,6 +19,10 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 8u34
 * [List of security fixes and other fixes in OpenJDK 18.0.2](https://bugs.openjdk.org/browse/JDK-8289469?jql=project%20%3D%20JDK%20AND%20fixVersion%20%3D%2018.0.2)
 
 ## New and Noteworthy
+
+### jdk8u342-b07 regression (`user.dir`)
+
+The latest Eclipse Temurin 8 release included the fix [JDK-8194154](https://bugs.openjdk.org/browse/JDK-8194154) which disabled the possibility to change the `user.dir` property. As a result, a second Temurin 8 release (jdk8u345-b01) will be released in the next few days. You can continue to track progress [by platform](https://github.com/adoptium/adoptium/issues/153) or [by detailed release checklist](https://github.com/adoptium/adoptium/issues/152).
 
 ### Eclipse Temurin 8 for Windows x64 respin
 
