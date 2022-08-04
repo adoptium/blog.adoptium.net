@@ -40,7 +40,7 @@ The link to the signatures is provided in the metadata for our releases.  In
 the following examples I will use JDK17 but you can change the calls
 appropriately for other versions:
 
-The metadata that contains the URL of the signature file can be obtained by
+The metadata that contains the URL of the signature file can be obtained
 as follows:
 
 `curl 'https://api.adoptium.net/v3/assets/feature_releases/17/ga' > adopt.json`
@@ -51,8 +51,7 @@ information you want is in the `binaries[0].package.link` and
 `binaries[0].package.signature_link` section of the file for the most recent
 version.
 
-The following example uses thenFor automation purposes, I will give an
-example using the [jq](https://stedolan.github.io/jq/) command line JSON
+The following example uses the [jq](https://stedolan.github.io/jq/) command line JSON
 parsing tool to pull out the information for Linux/x64 and download the
 product and the GPG signature using the `curl` command (change accordingly
 for other platforms)
