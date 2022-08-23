@@ -36,7 +36,7 @@
     "gatsby-transformer-sharp": "2.12.1",
     "glamor": "2.20.40",
     "node-fetch": "2.6.6",
-    "prismjs": "1.28.0",
+    "prismjs": "1.29.0",
     "radium": "0.26.2",
     "react": "16.14.0",
     "react-dom": "16.14.0",
