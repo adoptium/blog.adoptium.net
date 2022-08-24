@@ -27,14 +27,15 @@ points.
 # Why SSDF and not [insert other framework here]?
 
 There are other models available and if there are others that might have
-relevant things not covered by SSDF then please let uis know.  We
+relevant things not covered by SSDF then please let us know so we can
+evaluate whether it's worth including extra things from them.  We
 found that of the alternative models available such as
 [BSA](https://www.bsa.org/reports/updated-bsa-framework-for-secure-software)
-(which maps to SSDF) and [SLSA](https://slsa.dev/) the SSDF publication
-appeared to be suitable thorough and in many cases is more detailed that the
+(which maps to SSDF) and [SLSA](https://slsa.dev/) we found the SSDF
+publication to be suitably thorough and in many cases is more detailed than the
 alternatives we had looked at. This does not prevent us from aiming to
 attain the levels in other specifications, but means that our primary focus
-will be on the SSDF documents.
+will be on SSDF.
 
 ## What are we doing?
 
@@ -47,7 +48,7 @@ terms of the points in the specifications. Our process will be:
 3. Determine next steps in order to help us achieve the next level
 4. Implement actions to get to the best security levels that we can
 
-## What have you done so far
+## What have you done so far?
 
 One of the important things in the secure software specification relate to
 Software Bill Of Materials (Henceforth SBOMs) and we have started producing
@@ -60,10 +61,19 @@ Temurin builds.
 
 Additionally, we have been working towards having fully reproducable builds
 which are binary identical and can be rebuilt by others if desired in order
-to prove that we have buit what we say we have, in the way we said we did. 
+to prove that we have built what we say we have, in the way we said we did. 
 That way, a cautious user could rebuild what we have to verify that it is
 correct, but take advantage of all of our extensive testing and distribution
 without having to do that themselves.
+[This video](https://www.youtube.com/watch?v=rQpftEfMW5k) shows how far we
+have come to producible binary identical builds on Linux, but we've done
+similar activities on macOS and Windows platforms too.
+
+Also, in addition to the SHA checksums which we have been providing for a
+long time now, we have also recently (July 2022) started
+[adding GPG signatures](https://blog.adoptium.net/2022/07/gpg-signed-releases/)
+for our downloads, which can be used to verify that the downloads have not
+been tampered with since they were produced.
 
 ## How can I see how things are progressing?
 
@@ -78,4 +88,15 @@ individual issues covering each of them
 - ["PS": Protect Software](https://github.com/adoptium/adoptium/issues/123) (Source code management, access control and SBOMs and integrity verification)
 - ["PW": Produce Well-secured software](https://github.com/adoptium/adoptium/issues/124) (Peer reviews, secured software components, use standardized tools, thread modelling)
 - ["RV": Remediate Vulnerabilities](https://github.com/adoptium/adoptium/issues/125) (Understand and have reporting process for vulnerabilities nad incidents, and perform root cause analysis
+
+## What are your next steps?
+
+While the exact steps are always going to be somewhat fluid, these are some
+of the current planned next steps for the short term:
+
+- Continue to improve the SBOM detail ([build#3013](https://github.com/adoptium/temurin-build/issues/3013)) 
+- Improve our security of our code repositories including increasing mandatory reviewers for PRs
+- Improve isolation of build systems from the rest of the jenkins infrastructure
+- Migrate to building in docker images across the remaining Linux platforms (ppc64le and s390x)
+- Various other administrative security controls on our infrastructure.
 
