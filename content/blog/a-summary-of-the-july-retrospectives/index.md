@@ -53,6 +53,11 @@ We have covered the issues introduced in our repositories that caused minor dela
 
 Let's look at the last 2 years and the set of unique issues identifying the need to respin in the table below.
 
+<style scoped>
+table {
+  font-size: 10px;
+}
+</style>
 | Patch Release time | Problem Description | Symptom / Problem type | Affected release(s) | Fixed release(s) | Root cause | Introduced by CVE fix | First Chance | When Found | Suggested action | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | August 2022 | JDK-8290832: It is no longer possible to change "user.dir" in the JDK8 | Crash | 8u342 | 8u345 | JDK-8194154 | No | Early access builds testing | Deployment/Field/Product integration | Run gradle application build to exercise the code path |
@@ -60,6 +65,8 @@ Let's look at the last 2 years and the set of unique issues identifying the need
 | February 2022 | JDK-8218546: Unable to connect to https://google.com using java.net.HttpClient | JDK-8280695 / Functional issue | 11.0.14 | 11.0.14.1 | JDK-8213189 | No | Early access builds testing | Deployment/Field/Product integration |  --- | 
 | November 2020 | JDK-8250861: Potential JVM crash | Unclear | 8u272, 11.0.9 | 8u275, 11.0.9.1 | Unknown |Yes |  Regression testing on Spark? | Deployment/Field/Product integration testing | Adding regression testing on Spark?? |
 | August 2020 | JDK-8249677: Regression in ForkJoinPool behavior |  ACC Exception / Functional issue | 8u262 | 8u265 | JDK-8237117 | Yes | Code review | Deployment/Field/Product integration | Run lucene-solr 8.2.0 application which seemed to have discovered this issue | 
+
+---
 
 For the JDK 8u345 respin, the issue described in JDK-8290832 points to its root cause [JDK-8194154](https://bugs.openjdk.org/browse/JDK-8194154), which describes the crash that would occur when changing the "user.dir" property.  While changing user.dir is discouraged, some applications still do it, notably Gradle.  This is an interesting dilemna, where the feature is highly discouraged, but still possible, and therefore it is used in the field by some number of applications.  
 
