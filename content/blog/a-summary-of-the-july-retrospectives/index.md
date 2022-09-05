@@ -53,11 +53,6 @@ We have covered the issues introduced in our repositories that caused minor dela
 
 Let's look at the last 2 years and the set of unique issues identifying the need to respin in the table below.
 
-<style scoped>
-table {
-  font-size: 10px;
-}
-</style>
 | Patch Release time | Problem Description | Symptom / Problem type | Affected release(s) | Fixed release(s) | Root cause | Introduced by CVE fix | First Chance | When Found | Suggested action | 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | 
 | August 2022 | JDK-8290832: It is no longer possible to change "user.dir" in the JDK8 | Crash | 8u342 | 8u345 | JDK-8194154 | No | Early access builds testing | Deployment/Field/Product integration | Run gradle application build to exercise the code path |
