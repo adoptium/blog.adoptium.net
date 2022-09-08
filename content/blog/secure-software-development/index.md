@@ -1,6 +1,6 @@
 ---
 title: Secure Software Development Framework (SSDF) at Adoptium
-date: "2022-08-177T12:00:00+00:00"
+date: "2022-10-07T12:00:00+00:00"
 author: sxa
 description: An overview of the SSDF framework and what we are doing to work towards implementing it
 tags:
@@ -28,14 +28,14 @@ points.
 
 There are other models available and if there are others that might have
 relevant things not covered by SSDF then please let us know so we can
-evaluate whether it's worth including extra things from them.  We
-found that of the alternative models available such as
+evaluate whether it's worth including extra things from them.  We found that
+of the alternative models available such as
 [BSA](https://www.bsa.org/reports/updated-bsa-framework-for-secure-software)
 (which maps to SSDF) and [SLSA](https://slsa.dev/) we found the SSDF
-publication to be suitably thorough and in many cases is more detailed than the
-alternatives we had looked at. This does not prevent us from aiming to
-attain the levels in other specifications, but means that our primary focus
-will be on SSDF.
+publication to be suitably thorough and in many cases is more detailed than
+the alternatives we had looked at.  This does not prevent us from aiming to
+attain particular compliance levels in specifications such as SLSA, but
+means that our primary focus will be on the items in the SSDF framework.
 
 ## What are we doing?
 
@@ -43,10 +43,10 @@ As a starting point we are performing an analysis to determine where the
 Adoptium project, and Eclipse Temurin specifically to start with, is in
 terms of the points in the specifications. Our process will be:
 
-1. Determine which levels we already adhere too
-2. Collate the information on each of the SSDF points to determine where we currently stand
-3. Determine next steps in order to help us achieve the next level
-4. Implement actions to get to the best security levels that we can
+1. Determine which items in the specification we believe we already adhere to
+2. Collate the information on each of the SSDF points to clarify where we currently stand relative to what is needed
+3. Determine next steps in order to help us achieve increased compliance with the items we deem most important
+4. Implement actions to get to the best security for the product that we can and increase trust in our deliverables
 
 ## What have you done so far?
 
@@ -75,6 +75,11 @@ long time now, we have also recently (July 2022) started
 for our downloads, which can be used to verify that the downloads have not
 been tampered with since they were produced.
 
+In terms of github security we have also recently implemented two person
+reviews on all the critical repositories that are required for the build and
+release pipelines as well as enforcing 2FA for all committers on the
+project.
+
 ## How can I see how things are progressing?
 
 The top level issue that we are using to track the work is
@@ -97,6 +102,6 @@ of the current planned next steps for the short term:
 - Continue to improve the SBOM detail ([build#3013](https://github.com/adoptium/temurin-build/issues/3013)) 
 - Improve our security of our code repositories including increasing mandatory reviewers for PRs
 - Improve isolation of build systems from the rest of the jenkins infrastructure
-- Migrate to building in docker images across the remaining Linux platforms (ppc64le and s390x)
-- Various other administrative security controls on our infrastructure.
+- Evaluating the feasibility of building in docker images across remaining Linux platforms (ppc64le and s390x)
+- Various other administrative security controls and logging on our infrastructure.
 
