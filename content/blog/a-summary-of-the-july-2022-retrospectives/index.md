@@ -65,7 +65,7 @@ Let's look at the last 2 years and the set of unique issues identifying the need
 
 ---
 
-For the JDK 8u345 respin, the issue described in JDK-8290832 points to its root cause [JDK-8194154](https://bugs.openjdk.org/browse/JDK-8194154), which describes the crash that would occur when changing the "user.dir" property.  While changing user.dir is discouraged, some applications still do it, notably Gradle.  This is an interesting dilemna, where the feature is highly discouraged, but still possible, and therefore it is used in the field by some number of applications.  
+For the JDK 8u345 respin, the issue described in JDK-8290832 points to its root cause [JDK-8194154](https://bugs.openjdk.org/browse/JDK-8194154), which describes the crash that would occur when changing the "user.dir" property.  While changing user.dir is discouraged, some applications still do it, notably Gradle.  This is an interesting dilemma, where the feature is highly discouraged, but still possible, and therefore it is used in the field by some number of applications.  
 
 For the JDK 11.0.16.1, JDK 17.0.4.1 and JDK 18.0.2.1 respins, these could have potentially been found within the AQAvit testing if we had the [Wildfly testing](https://github.com/adoptium/aqa-tests/tree/master/external/wildfly) enabled.  This highlights the fact that we need to be testing with a broad set of external applications, especially ones that are used widely.  We are actively incorporating a set of tests in the AQAvit suite for this purpose in our [external test](https://github.com/adoptium/aqa-tests/tree/master/external) category, but need to progress this work. 
 
