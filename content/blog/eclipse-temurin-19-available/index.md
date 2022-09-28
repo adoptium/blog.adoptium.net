@@ -27,7 +27,7 @@ Adoptium is happy to announce the immediate availability of Eclipse Temurin 19. 
 
 ### Project Loom Preview/Incubator Features
 
-* [JEP 425: Virtual Threads (Preview)](https://openjdk.java.net/jeps/425).
+* [JEP 425: Virtual Threads (Preview)](https://openjdk.java.net/jeps/425) (x86_64 and aarch64 only.
 * [JEP 428: Structured Concurrency (Incubator)](https://openjdk.java.net/jeps/428).
 
 For a complete list of the enhancements (including ones that only impact developers of OpenJDK), [see the JDK 19 overview over at OpenJDK](https://openjdk.java.net/projects/jdk/19/).
