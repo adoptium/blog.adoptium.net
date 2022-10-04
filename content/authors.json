@@ -54,6 +54,13 @@
     "twitter": null,
     "github": "Mesbah-Alam"
   },
+  "pmc": {
+    "name": "Adoptium PMC",
+    "summary": "Collective of Adoptium Project Management Committee members",
+    "twitter": "adoptium",
+    "github": "adoptium",
+    "linkedin": null
+  },
   "shelleylambert": {
     "name": "Shelley Lambert",
     "summary": "Adoptium PMC and Adoptium WG Steering Committee member, Red Hat",
