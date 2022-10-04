@@ -1,6 +1,6 @@
 ---
 title: Eclipse Temurin 19 Available
-date: "2022-09-28T12:00:00+00:00"
+date: "2022-10-04T12:00:00+00:00"
 author: pmc
 description: Adoptium is excited to announce the immediate availability of Eclipse Temurin 19.
 tags:
