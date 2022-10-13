@@ -25,7 +25,7 @@ The goals of the working group include ensuring that Adoptium Temurin remains a 
 In his announcement, Cameron Balahan said:
 > "I'm pleased to announce that Google has joined the Eclipse Adoptium Working Group, a consortium of leaders in the Java community and makers of the Temurin build of OpenJDK. Temurin is one of the world's most popular JDK distributions certified by Adoptium for heightened compatibility and security testing. As a member of Adoptium Google will make Temurin available across GCP products and services, providing Java customers the highest standard of enterprise security and more opportunities to create integrated security-focused solutions. We're excited for you to try it out."
 
-Every release of Temurin has passed [Java SE compatibility tests](https://en.wikipedia.org/wiki/Technology_Compatibility_Kit) for conformity to standards in addition to the rigorous [Eclipse AQAvit](https://projects.eclipse.org/projects/adoptium.aqavit) verification suite for added confidence of quality. Adoptium’s Java SE binaries are always free to use under an open source license, and production-ready for the most demanding environments!
+Every release of Temurin has passed [Java SE compatibility tests](https://en.wikipedia.org/wiki/Technology_Compatibility_Kit) for conformity to standards in addition to the rigorous [Eclipse AQAvit](https://projects.eclipse.org/projects/adoptium.aqavit) verification suite for added confidence of quality. Adoptium’s Java SE binaries are always free to use under an open source license, and production-ready for the most demanding environments.
 
 The AQAvit quality programme not only checks functional correctness of the runtime, but also puts each runtime under long-running stress workloads, checks the runtime performance characteristics, tests compatibility with open source libraries, and tests that a range of known security vulnerabilities have been fixed before awarding a pass.
 
@@ -33,5 +33,5 @@ The AQAvit quality programme not only checks functional correctness of the runti
 
 Adoptium is excited to welcome Google to the working group and project work and we look forward to accelerating our shared goals together.
 
-Organizations interested in joining the Adoptium working group are invited to discuss their options with the [membership team](https://adoptium.net/join) in the first instance. Everyone is welcome to participate in Adoptium projects by joining the conversation on our (Slack channel](https://adoptium.net/slack).
+Organizations interested in joining the Adoptium working group are invited to discuss their options with the [membership team](https://adoptium.net/join) in the first instance. Everyone is welcome to participate in Adoptium projects by joining the conversation on our [Slack channel](https://adoptium.net/slack).
 
