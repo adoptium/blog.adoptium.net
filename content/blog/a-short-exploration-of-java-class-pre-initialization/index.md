@@ -31,6 +31,7 @@ public class Foo {
   }
 }
 ```
+
 No matter when, no matter how many times, the result of initialization of the Foo class is the same: creating a hash table with a size of 1024 as a cache will not affect the external environment. In such cases, we can apply class pre-initialization, i.e. dump cache objects into CDS images, and directly map cache objects in CDS images to the Java G1 heap when JVM starts ([8042668: Provide GC support for shared heap ranges in Class Data Sharing](https://bugs.openjdk.org/browse/JDK-8042668)). When the program runs, skip the static code block initialization of the Foo class to speed up the startup:
 
 ```java
