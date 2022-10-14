@@ -96,5 +96,11 @@
     "summary": "Adoptium Build team member working for Red Hat",
     "twitter": null,
     "github": "andrew-m-leonard"
+  },
+  "yiyang": {
+    "name": "Yi Yang",
+    "summary": "Software developer at Alibaba JVM Team",
+    "twitter": null,
+    "github": "kelthuzadx"
   }
 }
