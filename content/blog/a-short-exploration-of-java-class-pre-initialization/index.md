@@ -10,7 +10,7 @@ tags:
 ---
 
 ## 1. Background
-Java applications are expected to start quickly because of the advent of the cloud-native era. It is becoming increasingly popular to reduce resource costs by dynamically scaling and using serverless computing. Alibaba has done a lot of work and exploration to meet the demands for quick start of applications in Serverless computing scenarios, including AppCDS, Ahead of Time Compilation (AOT), fast class indexing(JarIndex), class pre-initialization, and other technologies to optimize language runtime. Users can obtain up to three times the startup performance improvement without modifying any code. One of the cutting-edge technologies is *class pre-initialization*.
+Java applications are expected to start quickly because of the advent of the cloud-native era. It is becoming increasingly popular to reduce resource costs by dynamically scaling and using serverless computing. Alibaba has done a lot of work and exploration to meet the demands for quick start of applications in Serverless computing scenarios, including AppCDS, Ahead of Time Compilation (AOT), fast class indexing (JarIndex), class pre-initialization, and other technologies to optimize language runtime. Users can obtain up to three times the startup performance improvement without modifying any code. One of the cutting-edge technologies is *class pre-initialization*.
 
 ## 2. Class Pre-Initialization
 ### 2.1 Motivation
