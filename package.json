@@ -41,7 +41,7 @@
     "react": "18.2.0",
     "react-dom": "16.14.0",
     "react-helmet": "6.1.0",
-    "react-share": "4.4.0",
+    "react-share": "4.4.1",
     "react-typography": "0.16.20",
     "typeface-merriweather": "1.1.13",
     "typeface-montserrat": "1.1.13",
