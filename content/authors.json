@@ -114,5 +114,11 @@
     "summary": "Adoptium Community Manager at Eclipse Foundation",
     "twitter": "cldelgadop",
     "github": "CarmenDelgadoEclipse"
+  },
+  "gangchen": {
+    "name": "Gang Chen",
+    "summary": "Software developer at Alibaba",
+    "twitter": null,
+    "github": "lingjun-cg"
   }
 }
