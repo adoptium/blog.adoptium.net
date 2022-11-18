@@ -15,8 +15,8 @@ The Secure Software Development Framework (Henceforth SSDF) is
 from the National Institute of Standards and Technology agency of the US
 Department of Commerce's Computer Security Resource Center division.  It is
 a set of development practices which can be used to establish secure
-development practices for your software and was based on development
-practices from multiple other organisations.  It's goal is to reduce
+development processesfor your software and was based on development
+practices from multiple other organisations.  Its goal is to reduce
 vulnerabilities in the software that organisations ship.  With President
 Biden's
 [executive order 14028](https://www.federalregister.gov/documents/2021/05/17/2021-10460/improving-the-nations-cybersecurity)
@@ -34,14 +34,15 @@ of the alternative models available such as
 (which maps to SSDF) and [SLSA](https://slsa.dev/) we found the SSDF
 publication to be suitably thorough and in many cases is more detailed than
 the alternatives we had looked at.  This does not prevent us from aiming to
-attain particular compliance levels in specifications such as SLSA, but
-means that our primary focus will be on the items in the SSDF framework.
+attain particular compliance levels in specifications such as SLSA, and as
+is mentioned on the web site we already meet SLSA level 2, but it means that
+much of our effort will be on the items in the SSDF framework.
 
 ## What are we doing?
 
-As a starting point we are performing an analysis to determine where the
+As a starting point we have been performing analysis to determine where the
 Adoptium project, and Eclipse Temurin specifically to start with, is in
-terms of the points in the specifications. Our process will be:
+terms of the points in the specifications.  Our process will be:
 
 1. Determine which items in the specification we believe we already adhere to
 2. Collate the information on each of the SSDF points to clarify where we currently stand relative to what is needed
@@ -53,29 +54,36 @@ terms of the points in the specifications. Our process will be:
 One of the important things in the secure software specification relate to
 Software Bill Of Materials (Henceforth SBOMs) and we have started producing
 SBOMs along with the Temurin builds using [CycloneDX](https://cyclonedx.org)
-as part of our regular build process. While the full content of it is still
-a work in progress and will be enhanced over time, we have a good baseline
-of data about what has been used to produce each of our builds across all of
-our platforms. The SBOM documents can be obtained along with the Eclipse
-Temurin builds.
+as part of our regular build process.  While the full content of it is still
+a work in progress and will be enhanced over time - and you can have your
+say [in this issue](https://github.com/adoptium/temurin-build/issues/3013) -
+we have a good baseline of data about what has been used to produce each of
+our builds across all of our platforms.  The JSON-formatted SBOMs can be
+obtained along with the Eclipse Temurin builds.
 
 Additionally, we have been working towards having fully reproducable builds
 which are binary identical and can be rebuilt by others if desired in order
 to prove that we have built what we say we have, in the way we said we did. 
 That way, a cautious user could rebuild what we have to verify that it is
-correct, but take advantage of all of our extensive testing and distribution
+correct and has not been compromised during the build and distribution
+process, but take advantage of all of our extensive testing and distribution
 without having to do that themselves.
-[This video](https://www.youtube.com/watch?v=rQpftEfMW5k) shows how far we
-have come to producible binary identical builds on Linux, but we've done
-similar activities on macOS and Windows platforms too.
+[This video](https://www.youtube.com/watch?v=rQpftEfMW5k) shows how far we have
+come to enable binary identical builds on Linux, but we have also done similar
+activities on macOS and Windows platforms too and our JDK19 deliverables at
+the time of writing are almost completely reproducible when built in an
+equivalent environment - the class data sharing archives in
+`lib/server/*.cds` are the only files that are not always reproducible.  You
+can read some details of this in our [reproducible build
+blog](https://blog.adoptium.net/2022/06/adoptium-reproducible-builds/).
 
 Also, in addition to the SHA checksums which we have been providing for a
 long time now, we have also recently (July 2022) started
 [adding GPG signatures](https://blog.adoptium.net/2022/07/gpg-signed-releases/)
 for our downloads, which can be used to verify that the downloads have not
-been tampered with since they were produced.
+been tampered with since they were produced by our jenkins pipelines.
 
-In terms of github security we have also recently implemented two person
+In terms of github security we have also recently activated two person
 reviews on all the critical repositories that are required for the build and
 release pipelines as well as enforcing 2FA for all committers on the
 project.
