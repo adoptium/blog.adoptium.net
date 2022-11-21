@@ -7,7 +7,7 @@ on:
 concurrency:
   group: "${{ github.ref }}"
   cancel-in-progress: ${{ github.event_name == 'pull_request' }}
-  
+
 jobs:
   linter:
     name: "Check on ${{ matrix.os }}"
@@ -22,8 +22,8 @@ jobs:
 
     - uses: actions/setup-node@v3
       with:
-        node-version: '14'
-        
+        node-version: '18'
+
     - name: Install Gatsby CLI
       run: npm install -g gatsby-cli
 
