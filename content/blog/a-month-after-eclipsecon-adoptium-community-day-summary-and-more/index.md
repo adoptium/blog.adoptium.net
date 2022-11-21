@@ -2,7 +2,7 @@
 title: A month after EclipseCon, Adoptium Community day summary, and more.
 date: "2022-11-24T12:00:00+00:00"
 author: carmendelgado
-description: A month after EclipseCon, Adoptium Community day summary, and more.
+description: Our Community manager gives us a summary of Eclipse Adoptium activities around the EclipseCon event.
 tags:
   - "Adoptium"
   - "EclipseCon"
