@@ -12,7 +12,7 @@ A month after the EclipseCon. I, Carmen Delgado, Adoptium Community manager, wan
 
 ## Monday, the 24th: Community Day
 
-This day I had the opportunity to meet most of my Eclipse co-workers during our breakfast at the hotel. We had a morning session where Tim Ellison, George Adams, and Shelley went through the Adoptium working group status and all the projects [link to the pdf document], and the community gave some feedback.
+This day I had the opportunity to meet most of my Eclipse co-workers during our breakfast at the hotel. We had a morning session where Tim Ellison, George Adams, and Shelley went through the Adoptium working group status and all the projects, and the community gave some feedback. You can read the presentation [here](Adoptium-Community-Day-EclipseCon2022.pdf).
 
 ![community day](community-day.jpg)
 *Tim, Shelley and George preparing Community day*
