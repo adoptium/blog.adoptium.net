@@ -1,6 +1,6 @@
 ---
 title: Adoptium Welcomes Rivos
-date: "2022-11-23T12:00:00+00:00"
+date: "2022-11-23T15:00:00+00:00"
 author: pmc
 description: Adoptium welcomes Rivos as the latest working group strategic member.
 tags:
