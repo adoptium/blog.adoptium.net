@@ -1,6 +1,6 @@
 import React from "react";
 import { useStaticQuery, graphql } from "gatsby";
-import Image from "gatsby-image";
+import { GatsbyImage } from "gatsby-plugin-image";
 
 import { rhythm } from "../utils/typography";
 
@@ -12,9 +12,11 @@ const ProfilePicInline = (props) => {
           node {
             name
             childImageSharp {
-              fixed(width: 30, height: 30) {
-                ...GatsbyImageSharpFixed
-              }
+              gatsbyImageData(
+                layout: FIXED
+                width: 30
+                height: 30
+              )
             }        
           }
         }
@@ -28,8 +30,8 @@ const ProfilePicInline = (props) => {
   }
 
   return (
-    <Image
-      fixed={profilePic.node.childImageSharp.fixed}
+    <GatsbyImage
+      image={profilePic.node.childImageSharp.gatsbyImageData}
       alt={props.name}
       style={{
         marginLeft: rhythm(1 / 2),

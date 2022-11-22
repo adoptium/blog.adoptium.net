@@ -72,16 +72,12 @@ export const blogPageQuery = graphql`
         title
       }
     }
-    allMdx(
-      sort: { fields: [frontmatter___date], order: DESC }
-      limit: $limit
-      skip: $skip
-    ) {
+    allMdx(sort: {frontmatter: {date: DESC}}, limit: $limit, skip: $skip) {
       edges {
         node {
           excerpt
           fields {
-            slug,
+            slug
             postPath
           }
           frontmatter {

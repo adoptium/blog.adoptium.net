@@ -31,12 +31,6 @@ module.exports = {
       }
     },
     {
-      resolve: "gatsby-plugin-load-script",
-      options: {
-        src: "//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"
-      }
-    },
-    {
       resolve: "gatsby-plugin-mdx",
       options: {
         extensions: [".mdx", ".md"],
@@ -59,18 +53,12 @@ module.exports = {
         ],
       },
     },
+    "gatsby-plugin-image",
     "gatsby-remark-images",
     "gatsby-transformer-sharp",
     "gatsby-plugin-sharp",
-    // {
-    //   resolve: "gatsby-plugin-google-analytics",
-    //   options: {
-    //     trackingId: "UA-99905649-2",
-    //     anonymize: true,
-    //   },
-    // },
     {
-      resolve: "gatsby-plugin-feed-mdx",
+      resolve: "gatsby-plugin-feed",
       options: {
         query: `
           {
@@ -92,28 +80,24 @@ module.exports = {
                   description: edge.node.excerpt,
                   date: edge.node.frontmatter.date,
                   url: site.siteMetadata.siteUrl + edge.node.fields.postPath,
-                  guid: site.siteMetadata.siteUrl + edge.node.fields.postPath,
-                  custom_elements: [{ "content:encoded": edge.node.html }],
+                  guid: site.siteMetadata.siteUrl + edge.node.fields.postPath
                 });
               });
             },
             query: `
               {
-                allMdx(
-                  sort: { order: DESC, fields: [frontmatter___date] },
-                  limit: 10
-                ) {
+                allMdx(sort: {frontmatter: {date: DESC}}, limit: 10) {
+                  totalCount
                   edges {
                     node {
                       excerpt
-                      html
                       fields {
                         slug
                         postPath
                       }
                       frontmatter {
+                        date(formatString: "MMMM DD, YYYY")
                         title
-                        date
                       }
                     }
                   }
@@ -136,10 +120,9 @@ module.exports = {
         background_color: "#ffffff",
         theme_color: "#663399",
         display: "minimal-ui",
-        icon: "content/assets/favicon.png",
+        icon: "content/assets/adoptium-icon.png",
       },
     },
-    "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-typography",
       options: {

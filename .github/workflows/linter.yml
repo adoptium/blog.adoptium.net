@@ -26,12 +26,9 @@ jobs:
     - uses: actions/setup-node@8c91899e586c5b171469028077307d293428b516 # v3.5.1
       with:
         node-version: '18'
-        
-    - name: Install Gatsby CLI
-      run: npm install -g gatsby-cli
 
     - name: Lint
       run: |
-        npm install
+        npm install --legacy-peer-deps
         npm run lint
-        gatsby build
+        npm run build
