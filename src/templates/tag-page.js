@@ -58,21 +58,21 @@ export const tagsPageQuery = graphql`
       }
     }
     allMdx(
-        filter: {frontmatter: {tags: {eq: $tag}}}
-        sort: { fields: [frontmatter___date], order: DESC }
+      filter: {frontmatter: {tags: {eq: $tag}}}
+      sort: {frontmatter: {date: DESC}}
     ) {
-        edges {
+      edges {
         node {
-            fields {
-                slug,
-                postPath
-            }
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                title
-                description
-                author
-            }
+          fields {
+            slug
+            postPath
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            author
+          }
         }
       }
     }

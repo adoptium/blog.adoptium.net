@@ -61,22 +61,22 @@ export const authorPageQuery = graphql`
       }
     }
     allMdx(
-        filter: {frontmatter: {author: {eq: $author}}}
-        sort: { fields: [frontmatter___date], order: DESC }
-        limit: $limit
+      filter: {frontmatter: {author: {eq: $author}}}
+      sort: {frontmatter: {date: DESC}}
+      limit: $limit
     ) {
-        edges {
+      edges {
         node {
-            fields {
-                slug,
-                postPath
-            }
-            frontmatter {
-                date(formatString: "MMMM DD, YYYY")
-                title
-                description
-                tags
-            }
+          fields {
+            slug
+            postPath
+          }
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            title
+            description
+            tags
+          }
         }
       }
     }

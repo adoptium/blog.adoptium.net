@@ -6,8 +6,7 @@ This is the source of the [Adoptium blog](https://blog.adoptium.net/).
 
 ## Prerequisites
 
-1. Install gatsby, run `npm install -g gatsby-cli`
-2. Install dependencies, run `npm install` in the root directory of the repository.
+1. Install dependencies, run `npm install` in the root directory of the repository.
 
 ## Adding Content
 

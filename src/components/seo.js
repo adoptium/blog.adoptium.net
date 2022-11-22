@@ -24,12 +24,11 @@
 
 import React from "react";
 import PropTypes from "prop-types";
-import Helmet from "react-helmet";
 import { useStaticQuery, graphql } from "gatsby";
 
 const adoptSocialImage = require("../images/social-image.png");
 
-const SEO = ({ description, lang, meta, title, twitterCard }) => {
+const SEO = ({ description, title, twitterCard }) => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -54,59 +53,21 @@ const SEO = ({ description, lang, meta, title, twitterCard }) => {
   }
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: "description",
-          content: metaDescription,
-        },
-        {
-          property: "og:title",
-          content: title,
-        },
-        {
-          property: "og:description",
-          content: metaDescription,
-        },
-        {
-          property: "og:image",
-          content: site.siteMetadata.siteUrl + twitterCard,
-        },
-        {
-          property: "og:type",
-          content: "website",
-        },
-        {
-          name: "twitter:card",
-          content: "summary_large_image",
-        },
-        {
-          name: "twitter:creator",
-          content: site.siteMetadata.social.twitter,
-        },
-        {
-          name: "twitter:site",
-          content: site.siteMetadata.social.twitter,
-        },
-        {
-          name: "twitter:title",
-          content: title,
-        },
-        {
-          name: "twitter:description",
-          content: metaDescription,
-        },
-        {
-          name: "twitter:image",
-          content: site.siteMetadata.siteUrl + twitterCard,
-        },
-      ].concat(meta)}
-    />
+    <>
+      <title>{title}</title>
+      <meta name="description" content={metaDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={metaDescription} />
+      <meta property="og:image" content={site.siteMetadata.siteUrl + twitterCard} />
+      <meta property="og:type" content="website" />
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:creator" content={site.siteMetadata.social.twitter} />
+      <meta name="twitter:site" content={site.siteMetadata.social.twitter} />
+      <meta name="twitter:title" content={title} />
+      <meta name="twitter:description" content={metaDescription} />
+      <meta name="twitter:image" content={site.siteMetadata.siteUrl + twitterCard} />
+      <script src='//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js' />
+    </>
   );
 };
 

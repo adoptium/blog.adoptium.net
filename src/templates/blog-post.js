@@ -1,6 +1,5 @@
 import React from "react";
 import { Link, graphql } from "gatsby";
-import { MDXRenderer } from "gatsby-plugin-mdx";
 import { MDXProvider } from "@mdx-js/react";
 
 import Layout from "../components/layout";
@@ -18,7 +17,7 @@ const components = {
   GuestPost
 };
 
-const BlogPostTemplate = ({ data, pageContext, location }) => {
+const BlogPostTemplate = ({ data, pageContext, location, children }) => {
   const post = data.mdx;
   const siteTitle = data.site.siteMetadata.title;
   const { previous, next } = pageContext;
@@ -28,7 +27,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
   let twitterCard = null;
 
   if (post.frontmatter && post.frontmatter.featuredImage) {
-    twitterCard = post.frontmatter.featuredImage.childImageSharp.sizes.src;
+    twitterCard = post.frontmatter.featuredImage.childImageSharp.gatsbyImageData.images.fallback.src;
   }
 
   return (
@@ -55,7 +54,7 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           <ShareButton location={location} siteMetadata={data.site.siteMetadata} post={post.frontmatter}/>
         </header>
         <MDXProvider components={components}>
-          <MDXRenderer>{post.body}</MDXRenderer>
+          {children}
         </MDXProvider>
         <Tags tags={tags}/>
         <Comments/>
@@ -125,12 +124,11 @@ export const pageQuery = graphql`
         tags
         featuredImage {
           childImageSharp {
-            sizes(maxWidth: 630) {
-              ...GatsbyImageSharpSizes
-            }
+            gatsbyImageData(
+              layout: FIXED
+            )
           }
         }
-        tags
       }
     }
   }

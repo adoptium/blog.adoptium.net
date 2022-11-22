@@ -40,7 +40,7 @@ exports.createPages = async ({ graphql, actions }) => {
   const result = await graphql(
     `
       {
-        allMdx(sort: { fields: [frontmatter___date], order: DESC }) {
+        allMdx(sort: {frontmatter: {date: DESC}}) {
           edges {
             node {
               fields {
@@ -51,11 +51,14 @@ exports.createPages = async ({ graphql, actions }) => {
                 title
                 tags
               }
+              internal {
+                contentFilePath
+              }
             }
           }
         }
         tagsGroup: allMdx(limit: 2000) {
-          group(field: frontmatter___tags) {
+          group(field: {frontmatter: {tags: SELECT}}) {
             fieldValue
           }
         }
@@ -75,7 +78,7 @@ exports.createPages = async ({ graphql, actions }) => {
 
     createPage({
       path: `${post.node.fields.postPath}`,
-      component: blogPost,
+      component: `${blogPost}?__contentFilePath=${post.node.internal.contentFilePath}`,
       context: {
         slug: post.node.fields.slug,
         postPath: post.node.fields.postPath,
