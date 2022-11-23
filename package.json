@@ -23,7 +23,7 @@
     "gatsby-plugin-image": "3.1.0",
     "gatsby-plugin-manifest": "5.1.0",
     "gatsby-plugin-mdx": "5.0.0",
-    "gatsby-plugin-offline": "6.0.0",
+    "gatsby-plugin-offline": "6.1.0",
     "gatsby-plugin-sharp": "5.0.0",
     "gatsby-plugin-typography": "5.1.0",
     "gatsby-remark-copy-linked-files": "6.1.0",
