@@ -108,5 +108,11 @@
     "summary": "Software developer at Alibaba",
     "twitter": null,
     "github": "D-D-H"
+  },
+  "carmendelgado":{
+    "name": "Carmen Delgado",
+    "summary": "Adoptium Community Manager at Eclipse Foundation",
+    "twitter": "cldelgadop",
+    "github": "CarmenDelgadoEclipse"
   }
 }
