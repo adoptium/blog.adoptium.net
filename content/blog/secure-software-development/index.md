@@ -1,6 +1,6 @@
 ---
 title: Secure Software Development Framework (SSDF) at Adoptium
-date: "2022-10-07T12:00:00+00:00"
+date: "2022-10-28T12:00:00+00:00"
 author: sxa
 description: An overview of the SSDF framework and what we are doing to work towards implementing it
 tags:
@@ -15,7 +15,7 @@ The Secure Software Development Framework (Henceforth SSDF) is
 from the National Institute of Standards and Technology agency of the US
 Department of Commerce's Computer Security Resource Center division.  It is
 a set of development practices which can be used to establish secure
-development processesfor your software and was based on development
+development processes for your software and was based on development
 practices from multiple other organisations.  Its goal is to reduce
 vulnerabilities in the software that organisations ship.  With President
 Biden's
@@ -33,10 +33,13 @@ of the alternative models available such as
 [BSA](https://www.bsa.org/reports/updated-bsa-framework-for-secure-software)
 (which maps to SSDF) and [SLSA](https://slsa.dev/) we found the SSDF
 publication to be suitably thorough and in many cases is more detailed than
-the alternatives we had looked at.  This does not prevent us from aiming to
-attain particular compliance levels in specifications such as SLSA, and as
-is mentioned on the web site we already meet SLSA level 2, but it means that
-much of our effort will be on the items in the SSDF framework.
+the alternatives we had looked at.  While we continue this work we are,
+along with other Eclipse Foundation projects, aiming to comply with the SLSA
+levels too as we perform this work, and with SSDF and SLSA we have
+complementary frameworks with both helping to enhance the software
+development lifecycle security and SLSA specifically allowing us to
+demonstrate iterative progress via the levels it has. Our recent blog post
+on SLSA level 2 compliance is an example of this.
 
 ## What are we doing?
 
@@ -81,7 +84,7 @@ Also, in addition to the SHA checksums which we have been providing for a
 long time now, we have also recently (July 2022) started
 [adding GPG signatures](https://blog.adoptium.net/2022/07/gpg-signed-releases/)
 for our downloads, which can be used to verify that the downloads have not
-been tampered with since they were produced by our jenkins pipelines.
+been tampered with since they were produced by our Jenkins pipelines.
 
 In terms of github security we have also recently activated two person
 reviews on all the critical repositories that are required for the build and
@@ -109,7 +112,7 @@ of the current planned next steps for the short term:
 
 - Continue to improve the SBOM detail ([build#3013](https://github.com/adoptium/temurin-build/issues/3013)) 
 - Improve our security of our code repositories including increasing mandatory reviewers for PRs
-- Improve isolation of build systems from the rest of the jenkins infrastructure
+- Improve isolation of build systems from the rest of the Jenkins infrastructure
 - Evaluating the feasibility of building in docker images across remaining Linux platforms (ppc64le and s390x)
 - Various other administrative security controls and logging on our infrastructure.
 
