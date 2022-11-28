@@ -1,8 +1,6 @@
-# Adoptium Blog
+# ⚠ DEPRECATION NOTICE ⚠
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/a45c0f64-9ce3-4553-a4ab-8aaefd9d5ce4/deploy-status)](https://app.netlify.com/sites/eclipsefdn-adoptium-blog/deploys)
-
-This is the source of the [Adoptium blog](https://blog.adoptium.net/).
+Development of this blog has now moved to [adoptium/adoptium.net](https://github.com/adoptium/adoptium.net/tree/main/content). This blog is no longer live at https://blog.adoptium.net and a redirect has been setup to direct existing traffic to https://adoptium.net/blog. No additional pull requests will be accepted in this repository.
 
 ## Prerequisites
 
